@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    color: #48D;
+    color: rgb(68, 160, 221);
     text-decoration: none;
 }
 
@@ -39,9 +39,9 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.75em;
     margin-bottom:25px;
-    margin-top: 30px;
+    margin-top: 25px;
 }
 
 h4 {
@@ -56,7 +56,7 @@ h4 a:hover {
 }
 
 .rounded {
-    border-radius: 175px 175px 175px 15px;
+    border-radius: 50% 10%;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -moz-background-clip: padding;
@@ -66,13 +66,13 @@ h4 a:hover {
 .coverArt {
     color: white;
     text-align: center;
-    max-height: 55%;
-    max-width:fit-content;
+    max-height: 300px;
+    max-width:  100%;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding-top: 1%;
+
 }
 
 .coverArtFull {
@@ -103,7 +103,7 @@ h4 a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
+    max-width: 1800px;
     margin-top: 0px;
     padding: 15px;
 }
@@ -166,8 +166,8 @@ h4 a:hover {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     max-width: 1600px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 .card {
