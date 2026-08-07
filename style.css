@@ -56,7 +56,7 @@ h4 a:hover {
 }
 
 .rounded {
-    border-radius: 175px 175px 175px 175px;
+    border-radius: 175px 175px 175px 15px;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -moz-background-clip: padding;
@@ -66,13 +66,13 @@ h4 a:hover {
 .coverArt {
     color: white;
     text-align: center;
-    max-height: 350px;
-    max-width: 100%;
+    max-height: 55%;
+    max-width:fit-content;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    padding: 0px;
+    padding-top: 1%;
 }
 
 .coverArtFull {
@@ -89,13 +89,13 @@ h4 a:hover {
 }
 
 .coverDiv {
-    height: 600px;
+    height: 500px;
     position: relative;
     padding-top: 40px;
 }
 
 .coverDivFull {
-    height: 600px;
+    height: 500px;
     position: relative;
 }
 
@@ -346,7 +346,7 @@ h4 a:hover {
 }
 
 .hero-image {
-    height: 600px;
+    height: 500px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
