@@ -16,12 +16,13 @@ a {
 
 p {
     color: rgb(36,36,38);
-    font-size: 1.125em;
+    font-size: 1.25em;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: left;
     padding-top: 10px;
     padding-bottom: 10px;
+
 }
 
 p a:hover {
@@ -112,7 +113,7 @@ h4 a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .light {
@@ -138,6 +139,11 @@ h4 a:hover {
     background-color: rgb(195,195,200);
 }
 
+.mainTextField {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
 .textBubbleDiv {
     background-color: rgb(225,225,230);
     text-align: center;
@@ -146,7 +152,7 @@ h4 a:hover {
     margin-left: auto;
     margin-right: auto;
     padding: 10px;
-    margin-top: 25px;
+    margin-top: 100px;
     margin-bottom: 25px;
     border-radius: 30px 30px 30px 30px;
     -moz-background-clip: padding;
@@ -160,6 +166,8 @@ h4 a:hover {
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     max-width: 1600px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .card {
@@ -168,7 +176,15 @@ h4 a:hover {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
+
 }
+
+.grid a:hover{
+    background-color: rgb(86, 86, 86);
+    border-radius: 35px 35px 35px 35px;
+    height: auto;
+}
+
 
 .item {
     text-decoration: none;
@@ -315,7 +331,7 @@ h4 a:hover {
 
 .card-body {
     background-color: white;
-    height: auto;
+    height: 110px;
     display: block;
     margin-left: 0px;
     margin-right: 0px;
@@ -378,13 +394,13 @@ h4 a:hover {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 8px 16px;
+    padding: 1px 16px;
     text-decoration: none;
     font-size: 17px;
 }
 
 .topnav a:hover {
-    background-color: rgb(142,142,147);;
+    background-color: rgb(74, 64, 3);;
 }
 
 .topnav .icon {
@@ -429,11 +445,15 @@ h4 a:hover {
 }
 
 .rightVerticalLine {
-    border-right: thin solid #555555;
+    border-right: thin solid #b4adad;
 }
 
 .leftVerticalLine {
-    border-left: thin solid #555555;
+    border-left: thin solid #b4adad;
+}
+
+.horizontalLine {
+    border-bottom: thick solid #b4adad;
 }
 
 @media screen and (max-width: 1200px) {
@@ -518,6 +538,6 @@ h4 a:hover {
     }
     
     .topnav {
-        background-color: rgb(104, 87, 19);
+        background-color: rgb(72, 72, 72);
     }
 }
