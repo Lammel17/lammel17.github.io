@@ -415,10 +415,10 @@ h4 a:hover {
 */
 .gridProjects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(350px, 100%), 1fr));
     gap: clamp(5px, 1vw, 15px);
     justify-content: center;
-    width: min(1600px, 100%);
+    width: min(1400px, 100%);
     margin: 0 auto;
     padding-inline: clamp(15px, 4vw, 60px);
     box-sizing: border-box;
@@ -427,10 +427,11 @@ h4 a:hover {
 
 .gridProjectTile {
     width: 100%;
+
     aspect-ratio: 12/12;
     box-sizing: border-box;
-
 }
+
 
 .grid a:hover{
     background-color: rgb(98, 98, 98);
@@ -537,7 +538,7 @@ h4 a:hover {
 
 .gridArtworks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
     gap: clamp(5px, 1vw, 15px);
 
     width: min(1600px, 100%);
