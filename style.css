@@ -17,7 +17,7 @@ a {
 
 p {
     color: rgb(36,36,38);
-    font-size: 0.8em;
+    font-size: 1.6;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: left;
@@ -33,7 +33,7 @@ p a:hover {
 }
 
 h1, h2 {
-    font-size: 2.5em;
+    font-size: clamp(2rem, 4vw, 3rem);
     margin-bottom: 0px;
     margin-top: 50px;
     margin-bottom: 25px;
@@ -41,13 +41,13 @@ h1, h2 {
 }
 
 h3 {
-    font-size: 1.75em;
+    font-size: clamp(1.4rem, 2.5vw, 1.75rem);
     margin-bottom:25px;
     margin-top: 25px;
 }
 
 h4 {
-    font-size: 1.25em;
+    font-size: clamp(1.15rem, 2vw, 1.4rem);
     margin-bottom: 25px;
     margin-top: 25px;
 }
@@ -413,30 +413,23 @@ h4 a:hover {
     padding-bottom: 20px;
 }
 */
-
-
-
 .gridProjects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: clamp(5px, 1vw, 15px);
     justify-content: center;
-
-    max-width: 1600px;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 10px;
+    width: min(1600px, 100%);
+    margin: 0 auto;
+    padding-inline: clamp(15px, 4vw, 60px);
+    box-sizing: border-box;
 }
 
 
 .gridProjectTile {
     width: 100%;
-    aspect-ratio: 3 / 4;
+    aspect-ratio: 12/12;
     box-sizing: border-box;
-}
 
-.content {
-    padding: 5px;
-    transition: padding 0.3s ease;
 }
 
 .grid a:hover{
@@ -462,6 +455,9 @@ h4 a:hover {
     background-clip: padding-box;
     -moz-background-clip: padding;
     -webkit-transform: translateZ(0);
+    aspect-ratio: 5/3;
+    object-fit: cover;
+    object-position: 30% 20%;
 }
 
 .card-body {
@@ -470,7 +466,7 @@ h4 a:hover {
     display: block;
     margin-left: 0px;
     margin-right: 0px;
-    margin-bottom: 20px;
+    margin-bottom:20px;
     margin-top: 0px;
     padding: auto;
     border-radius: 0px 0px 15px 15px;
@@ -541,13 +537,13 @@ h4 a:hover {
 
 .gridArtworks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    gap: clamp(5px, 1vw, 15px);
 
-    max-width: 1600px;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 10px;
+    width: min(1600px, 100%);
+    margin: 0 auto;
+    padding-inline: clamp(15px, 4vw, 60px);
+    box-sizing: border-box;
 }
 
 .gridArtworkTile {
@@ -562,7 +558,7 @@ h4 a:hover {
     display: block;
     width: 100%;
     height: 100%;
-aspect-ratio: 3 / 4;
+    aspect-ratio: 3 / 4;
     object-fit: cover;
     object-position: 30% 20%;
 }
@@ -575,6 +571,7 @@ aspect-ratio: 3 / 4;
 .topnav {
     overflow: hidden;
     background-color: rgb(50, 50, 50);
+    line-height: 1.9;
 }
 
 .topnav a {
@@ -582,7 +579,7 @@ aspect-ratio: 3 / 4;
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 0px 16px;
+    padding: 0px 11px;
     text-decoration: none;
     font-size: 16px;
 }
