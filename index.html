@@ -42,7 +42,7 @@
         </div>
 
         <!-- Header with Image & Text -->
-        <div class="hero-image" style="background-image: url('img/background/header-bg.jpg');">
+        <div class="big-TopBackground-image" style="background-image: url('img/background/header-bg.jpg');">
             <div class="coverDiv">
                 <img class="coverArt rounded" src="img/profile/profilbild4gut.png" alt="Logo" height="220" width="220"></img>
                 <div class="hero-text">
@@ -65,7 +65,7 @@
         </div>
 
         <div class="footer">
-        <p class="subtle"><i><a href="My-Projects.html" target="_blank" aria-label="Download Portfolio Template Button">Learn more about me here</a>.</i></p>
+        <p class="subtle"><i><a href="About-Me.html" target="_blank" aria-label="Download Portfolio Template Button">Learn more about me here</a>.</i></p>
         </div>    
 
         <div class="descriptionDiv">
@@ -113,65 +113,7 @@
                     </div>
                 </a>
 
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card4.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card5.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card6.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card7.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card8.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
+                
             </div>
         </div>
 
@@ -184,66 +126,22 @@
         <div class="descriptionDiv">
 
             <!-- Section -->
-            <h2>Recent Artworks</h2>
+            <h2>Favourite Artworks</h2>
 
             <!-- Image Grid -->
             <div class="gridArtworks">
 
-                <!-- Image Item -->
-                <div class="gridArtworkTile">
+                <!-- Image Item 
+                <div class="gridArtworkTile" href="#" onclick="openPopup(this.querySelector('img')); return false;">
                     <div class="hoverable">
                         <div class="gridArtworkTileImage">
-                            <img  src="artworks/2 malady2.jpg" alt="Image" ></img>
+                            <img  src="artworks/2 malady2.jpg" alt="Image"></img>
                         </div>
                     </div>
-                </div>
-
-                                <!-- Image Item -->
-                <div class="gridArtworkTile">
-                    <div class="hoverable">
-                        <div class="gridArtworkTileImage">
-                                <img  src="artworks/andro2 - Kopie.png" alt="Image" ></img>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Item -->
-                <div class="gridArtworkTile">
-                    <div class="hoverable">
-                        <div class="gridArtworkTileImage">
-                            <img  src="artworks/2 malady2.jpg" alt="Image" ></img>
-                        </div>
-                    </div>
-                </div>
-
-                                <!-- Image Item -->
-                <div class="gridArtworkTile">
-                    <div class="hoverable">
-                        <div class="gridArtworkTileImage">
-                                <img  src="artworks/andro2 - Kopie.png" alt="Image" ></img>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Image Item -->
-                <div class="gridArtworkTile">
-                    <div class="hoverable">
-                        <div class="gridArtworkTileImage">
-                            <img  src="artworks/2 malady2.jpg" alt="Image" ></img>
-                        </div>
-                    </div>
-                </div>
-
-                                <!-- Image Item -->
-                <div class="gridArtworkTile">
-                    <div class="hoverable">
-                        <div class="gridArtworkTileImage">
-                                <img  src="artworks/andro2 - Kopie.png" alt="Image" ></img>
-                        </div>
-                    </div>
-                </div>
-            
+                </div> -->
+                
             </div>
+
         </div>
         <div class="footer">
         <p class="subtle"><i><a href="My-Art.html" target="_blank" aria-label="Download Portfolio Template Button">See all Artworks here</a>.</i></p>
@@ -266,6 +164,10 @@
         </div>
 
 
+        <div id="imagePopup" class="imagePopup" onclick="closePopup()">
+            <img id="popupImage" src="" alt="">
+        </div>
+
         <!-- Navigation Script -->
         <script>
             function myFunction() {
@@ -276,6 +178,111 @@
                     x.className = "topnav";
                 }
             }
+            
+            //projects
+            const projects = [
+                {
+                    name: "Cubi",
+                    category: "Game Development",
+                    description: "A third-person action game focused on responsive combat and animation-driven movement.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Portfolio Website",
+                    category: "Web Design",
+                    description: "A responsive portfolio website for showcasing my design and development work.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Environment Study",
+                    category: "3D Art",
+                    description: "A collection of environment models and experiments created in Blender.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                }
+            ];
+
+                        const projectGrid = document.querySelector(".gridProjects");
+
+            projects.forEach(project => {
+
+                const tileP = document.createElement("a");
+
+                tileP.className = "gridProjectTile";
+                tileP.href = project.page;
+
+                tileP.innerHTML = `
+                    <div class="hoverable">
+                        <img src="${project.image}" alt="${project.name}">
+
+                        <div class="card-body">
+                            <div class="subtitle">${project.category}</div>
+                            <div class="title">${project.name}</div>
+                            <div class="description">${project.description}</div>
+                        </div>
+                    </div>
+                `;
+
+                projectGrid.appendChild(tileP);
+            });
+
+
+
+
+
+            //Artwork Grid
+            function openPopup(image) {
+                const popup = document.getElementById("imagePopup");
+                const popupImage = document.getElementById("popupImage");
+
+                popupImage.src = image.src;
+                popupImage.alt = image.alt;
+                
+                popup.style.display = "flex";
+            }
+        
+            function closePopup() {
+                document.getElementById("imagePopup").style.display = "none";
+            }
+        
+        
+            const artworks = [
+                "3 RWU 23.png",
+                "2 malady2.jpg",
+                "sleeper medis. finish suss - Kopie.png",
+                "concept artt1.png",
+                "4 woody - Kopie.jpg",
+                "TESS 1.png",
+                "dwarf 1.png",
+                "broken face 9.1.png",
+                "scolar.png",
+                "hand3.png",
+                "thick leg 7.7 1.png",
+                "medis update 1.png",
+                "new logo 4.png",
+                
+            ];
+
+            const grid = document.querySelector(".gridArtworks");
+
+            artworks.forEach(filename => {
+                const tile = document.createElement("div");
+
+                tile.className = "gridArtworkTile";
+
+                tile.innerHTML = `
+                    <div class="hoverable" onclick="openPopup(this.querySelector('img'))">
+                        <img src="artworks/${filename}" alt="" loading="lazy">
+                    </div>
+                `;
+
+                grid.appendChild(tile);
+            });
+
         </script>
     </body>
 </html>

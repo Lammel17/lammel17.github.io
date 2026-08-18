@@ -18,6 +18,7 @@ a {
 p {
     color: rgb(36,36,38);
     font-size: 1.6;
+    font-size: 1.1rem;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: left;
@@ -228,6 +229,16 @@ h4 a:hover {
     padding: 0px;
 }
 
+.img-big {
+    max-height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
 
 .item img {
     color: white;
@@ -244,7 +255,7 @@ h4 a:hover {
 
 
 
-.hero-image {
+.big-TopBackground-image {
     height: 400px;
     background-position: center;
     background-repeat: no-repeat;
@@ -253,8 +264,17 @@ h4 a:hover {
     margin-bottom: 5px;
 }
 
-.small-hero-image {
+.medium-TopBackground-image {
     height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.small-TopBackground-image {
+    height: 100px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,130 +308,7 @@ h4 a:hover {
 
 
 
-/*Project grid and Tiles--------------------------
-.grid {
-    display: -ms-flexbox; 
-    display: flex;
-    -ms-flex-wrap: wrap; 
-    flex-wrap: wrap;
-    max-width: 1600px;
-    padding-left: 10%;
-    padding-right: 10%;
-
-
-    justify-content: center;
-
-}
-
-
-.card {
-    text-decoration: none;
-    position: relative;
-    -ms-flex: 25%;
-    flex: 1 1 300px;
-    max-width: 25%;
-}
-
-.content {
-    padding: 5px;
-    transition: padding 0.3s ease;
-}
-
-.grid a:hover{
-    background-color: rgb(98, 98, 98);
-    border-radius: 20px 20px 20px 20px;
-    height: auto;
-    margin-bottom: 0px;
-}
-
-.card img {
-    color: white;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 0px;
-    margin-top: 5px;
-    padding: 0px;
-    border-radius: 15px 15px 0px 0px;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -moz-background-clip: padding;
-    -webkit-transform: translateZ(0);
-}
-
-.card-body {
-    background-color: white;
-    height: 130px;
-    display: block;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-bottom: 20px;
-    margin-top: 0px;
-    padding: auto;
-    border-radius: 0px 0px 15px 15px;
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-    -moz-background-clip: padding;
-    -webkit-transform: translateZ(0);
-}
-
-.subtitle {
-    color: #999999;
-    font-weight: bold;
-    height: 20px;
-    line-height: 20px;
-    display: block;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    padding: auto;
-    font-size: 0.8em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 0px;
-}
-
-.title {
-    color: black;
-    font-weight: bold;
-    line-height: 25px;
-    display: block;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    padding: auto;
-    font-size: 1.2em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: left;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-
-.description {
-    color: #999;
-    display: block;
-    line-height: 18px;
-    margin-left: 15px;
-    margin-right: 15px;
-    margin-bottom: 15px;
-    margin-top: 0px;
-    padding: auto;
-    font-size: 1em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: left;
-    padding-top: 5px;
-    padding-bottom: 20px;
-}
-*/
+/*Project grid and Tiles--------------------------*/
 .gridProjects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
@@ -472,6 +369,7 @@ h4 a:hover {
     background-clip: padding-box;
     -moz-background-clip: padding;
     -webkit-transform: translateZ(0);
+
 }
 
 .subtitle {
@@ -480,12 +378,12 @@ h4 a:hover {
     height: 20px;
     line-height: 20px;
     display: block;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5px;
     margin-top: 0px;
     padding: auto;
-    font-size: 0.8em;
+    font-size: 0.9em;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: left;
@@ -498,14 +396,12 @@ h4 a:hover {
     font-weight: bold;
     line-height: 25px;
     display: block;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 5px;
-    margin-top: 0px;
+    margin-top: 5px;
     padding: auto;
     font-size: 1.2em;
-    margin-bottom: 0px;
-    margin-top: 0px;
     text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -515,17 +411,20 @@ h4 a:hover {
     color: #999;
     display: block;
     line-height: 18px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 15px;
-    margin-top: 0px;
-    padding: auto;
+    margin-top: px;
+
     font-size: 1em;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    line-height: 18px;
+    padding: 0;
     text-align: left;
-    padding-top: 5px;
-    padding-bottom: 20px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
 }
 
 
@@ -558,9 +457,40 @@ h4 a:hover {
     height: 100%;
     aspect-ratio: 3 / 4;
     object-fit: cover;
-    object-position: 30% 20%;
+    object-position: 50% 20%;
 }
 
+
+
+/*popup--------------------------*/
+.imagePopup {
+    display: none;
+
+    position: fixed;
+    z-index: 1000;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    cursor: zoom-out;
+}
+
+.imagePopup img {
+    max-width: 90%;
+    max-height: 90%;
+
+    width: auto;
+    height: auto;
+
+    object-fit: contain;
+}
 
 
 
