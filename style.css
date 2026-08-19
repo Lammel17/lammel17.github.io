@@ -297,11 +297,11 @@ h4 a:hover {
 /*Hoverable tiles--------------------------*/
 .hoverable {
     padding: 5px;
-    transition: padding 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .hoverable:hover {
-    padding: 0px;
+    transform: scale(1.02);
 }
 
 
@@ -318,6 +318,7 @@ h4 a:hover {
     margin: 0 auto;
     padding-inline: clamp(15px, 4vw, 60px);
     box-sizing: border-box;
+    
 }
 
 
@@ -326,15 +327,9 @@ h4 a:hover {
     max-height: 420px;
     aspect-ratio: 12/12;
     box-sizing: border-box;
+    
 }
 
-
-.grid a:hover{
-    background-color: rgb(98, 98, 98);
-    border-radius: 20px 20px 20px 20px;
-    height: auto;
-    margin-bottom: 0px;
-}
 
 .gridProjectTile img {
     color: white;
@@ -372,23 +367,52 @@ h4 a:hover {
 
 }
 
-.subtitle {
-    color: #999999;
+.category {
+    font-size: 1em;
     font-weight: bold;
-    height: 20px;
-    line-height: 20px;
-    display: block;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5px;
-    margin-top: 0px;
-    padding: auto;
-    font-size: 0.9em;
-    margin-bottom: 0px;
-    margin-top: 0px;
-    text-align: left;
-    padding-top: 10px;
-    padding-bottom: 0px;
+    line-height: 22px;
+    color: #d9d9d9;
+    background-color: #353535;
+}
+
+.category-game-dev {
+    color: #ffffff;
+    background-color: #0a4e97;
+}
+
+.category-artwork {
+    color: #ffffff;
+    background-color: #0a0a0a;
+}
+
+.category-3d {
+    color: #ffffff;
+    background-color: #af6900;
+}
+
+.category-animation {
+    color: #ffffff;
+    background-color: #008348;
+}
+
+.category-film-audio {
+    color: #ffffff;
+    background-color: #9a0000;
+}
+
+.category-code {
+    color: #ffffff;
+    background-color: #691a88;
+}
+
+.category-text {
+    color: #000000;
+    background-color: #d3d3d3;
+}
+
+.category-web {
+    color: #feffff;
+    background-color: #b39a08;
 }
 
 .title {
@@ -399,12 +423,17 @@ h4 a:hover {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5px;
-    margin-top: 5px;
+    margin-top: 10px;
     padding: auto;
-    font-size: 1.2em;
+    font-size: 1.3em;
     text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
 }
 
 .description {

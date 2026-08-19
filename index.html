@@ -76,44 +76,18 @@
             <!-- Portfolio Grid -->
             <div class="gridProjects">
 
-                <!-- Portfolio Item -->
+                <!-- Portfolio Item 
                 <a href="image-example.html" class="gridProjectTile">
                     <div class="hoverable">
 
                         <img src="img/card1.jpg" alt="Card Image" ></img>
                         <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
+                            <div class="category">CATEGORY</div>
                             <div class="title">Card Title</div>
                             <div class="description">Short Description</div>
                         </div>
                     </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card2.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Portfolio Item -->
-                <a href="image-example.html" class="gridProjectTile">
-                    <div class="hoverable">
-                        <img src="img/card3.jpg" alt="Card Image" height="390" width="390"></img>
-                        <div class="card-body">
-                            <div class="subtitle">CATEGORY</div>
-                            <div class="title">Card Title</div>
-                            <div class="description">Short Description</div>
-                        </div>
-                    </div>
-                </a>
-
-                
+                </a>-->
             </div>
         </div>
 
@@ -183,7 +157,8 @@
             const projects = [
                 {
                     name: "Cubi",
-                    category: "Game Development",
+                    category: "None",
+                    categoryClass: "none",
                     description: "A third-person action game focused on responsive combat and animation-driven movement.",
                     image: "img/card3.jpg",
                     page: "projects/image-example.html"
@@ -191,7 +166,8 @@
 
                 {
                     name: "Portfolio Website",
-                    category: "Web Design",
+                    category: "Game Development",
+                    categoryClass: "game-dev",
                     description: "A responsive portfolio website for showcasing my design and development work.",
                     image: "img/card3.jpg",
                     page: "projects/image-example.html"
@@ -199,7 +175,62 @@
 
                 {
                     name: "Environment Study",
-                    category: "3D Art",
+                    category: "Artwork",
+                    categoryClass: "artwork",
+                    description: "A collection of environment models and experiments created in Blender.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Cubi",
+                    category: "3D Model",
+                    categoryClass: "3d",
+                    description: "A third-person action game focused on responsive combat and animation-driven movement.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Portfolio Website",
+                    category: "Animation",
+                    categoryClass: "animation",
+                    description: "A responsive portfolio website for showcasing my design and development work.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Environment Study",
+                    category: "Film-Audio",
+                    categoryClass: "film-audio",
+                    description: "A collection of environment models and experiments created in Blender.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Cubi",
+                    category: "Coding",
+                    categoryClass: "code",
+                    description: "A third-person action game focused on responsive combat and animation-driven movement.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Portfolio Website",
+                    category: "Information Text",
+                    categoryClass: "text",
+                    description: "A responsive portfolio website for showcasing my design and development work.",
+                    image: "img/card3.jpg",
+                    page: "projects/image-example.html"
+                },
+
+                {
+                    name: "Environment Study",
+                    category: "Webdesign",
+                    categoryClass: "web",
                     description: "A collection of environment models and experiments created in Blender.",
                     image: "img/card3.jpg",
                     page: "projects/image-example.html"
@@ -217,10 +248,12 @@
 
                 tileP.innerHTML = `
                     <div class="hoverable">
-                        <img src="${project.image}" alt="${project.name}">
+                        <img src="${project.image}" alt="${project.name}" loading="lazy">
 
                         <div class="card-body">
-                            <div class="subtitle">${project.category}</div>
+                            <div class="category category-${project.categoryClass}"> 
+                                ${project.category}
+                            </div>
                             <div class="title">${project.name}</div>
                             <div class="description">${project.description}</div>
                         </div>
@@ -263,7 +296,7 @@
                 "hand3.png",
                 "thick leg 7.7 1.png",
                 "medis update 1.png",
-                "new logo 4.png",
+                //"new logo 4.png",
                 
             ];
 
