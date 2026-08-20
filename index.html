@@ -58,14 +58,14 @@
                 <!-- Section -->
                 <h2 class="headerTextAlignLeft">Welcome to my Space</h2>
 
-                <p class="testJustify"> I am a <a href="https://www.gamecampus.de/berufsbild/technical-art" target="_blank">Technical Artist</a> from germany, trying to work on passionate projects whenever I can. Those can range from coding a game, 3D modeling, animation, game design, to digital art or even world building. My speciality lies in creating a good motion and action feel in a third person 3D game. </p>
+                <p class="testJustify"> I am a <a href="https://www.gamecampus.de/berufsbild/technical-art">Technical Artist</a> from germany, trying to work on passionate projects whenever I can. Those can range from coding a game, 3D modeling, animation, game design, to digital art or even world building. My speciality lies in creating a good motion and action feel in a third person 3D game. </p>
                 <p>Please enjoy your time here!</p>
                 <p style="text-align: right;"><strong>- Lukas Müller</strong><br>
             </div>
         </div>
 
         <div class="footer">
-        <p class="subtle"><i><a href="About-Me.html" target="_blank" aria-label="Download Portfolio Template Button">Learn more about me here</a>.</i></p>
+        <p class="subtle"><i><a href="About-Me.html" aria-label="Download Portfolio Template Button">Learn more about me here</a>.</i></p>
         </div>    
 
         <div class="descriptionDiv">
@@ -93,7 +93,7 @@
 
 
         <div class="footer">
-        <p class="subtle"><i><a href="My-Projects.html" target="_blank" aria-label="Download Portfolio Template Button">See all Projects here</a>.</i></p>
+        <p class="subtle"><i><a href="My-Projects.html" aria-label="Download Portfolio Template Button">See all Projects here</a>.</i></p>
         </div>
             
 
@@ -118,7 +118,7 @@
 
         </div>
         <div class="footer">
-        <p class="subtle"><i><a href="My-Art.html" target="_blank" aria-label="Download Portfolio Template Button">See all Artworks here</a>.</i></p>
+        <p class="subtle"><i><a href="My-Art.html" aria-label="Download Portfolio Template Button">See all Artworks here</a>.</i></p>
         </div>
         
         <!-- Share Your Socials -->
@@ -156,85 +156,109 @@
             //projects
             const projects = [
                 {
-                    name: "Cubi",
-                    category: "None",
-                    categoryClass: "none",
-                    description: "A third-person action game focused on responsive combat and animation-driven movement.",
-                    image: "img/card3.jpg",
-                    page: "projects/image-example.html"
-                },
-
-                {
-                    name: "Portfolio Website",
+                    name: "Cube Game WIP",
                     category: "Game Development",
                     categoryClass: "game-dev",
-                    description: "A responsive portfolio website for showcasing my design and development work.",
-                    image: "img/card3.jpg",
+                    description: "A minimalist Souls-like game featuring a playable Cube, focused on achieving a satisfying character movement feel. The project was built entirely from the ground up.",
+                    image: "projects/Cubi/CoverImage.png",
                     page: "projects/image-example.html"
                 },
 
                 {
-                    name: "Environment Study",
-                    category: "Artwork",
-                    categoryClass: "artwork",
-                    description: "A collection of environment models and experiments created in Blender.",
-                    image: "img/card3.jpg",
+                    name: "Innovil: A Souls-Like Boss Fight (Unity)",
+                    category: "Game Development",
+                    categoryClass: "game-dev",
+                    description: "A fully functional Souls-like boss fight where the player battles a mechanical beast. The design, models, animations, and code were all created by me.",
+                    image: "projects/Innovil/CoverImage.png",
                     page: "projects/image-example.html"
                 },
-
                 {
-                    name: "Cubi",
-                    category: "3D Model",
+                    name: "Hoverbike (Unity)",
+                    category: "Game Development",
+                    categoryClass: "game-dev",
+                    description: "This game was built entirely from the ground up as a hoverbike simulation, where the player collects seven signs to access a gate leading seamlessly to another world.",
+                    image: "projects/Hoverbike/CoverImage.png",
+                    page: "projects/image-example.html"
+                },
+                
+                {
+                    name: "Ester Character",
+                    category: "3D Modelling",
                     categoryClass: "3d",
-                    description: "A third-person action game focused on responsive combat and animation-driven movement.",
-                    image: "img/card3.jpg",
+                    description: "Ester is a 3D character model made in Blender based on a concept sketch. I also experimented with rigging the model and created a short animation.",
+                    image: "projects/Esteria/CoverImage.png",
                     page: "projects/image-example.html"
                 },
 
                 {
-                    name: "Portfolio Website",
-                    category: "Animation",
-                    categoryClass: "animation",
-                    description: "A responsive portfolio website for showcasing my design and development work.",
-                    image: "img/card3.jpg",
-                    page: "projects/image-example.html"
-                },
-
-                {
-                    name: "Environment Study",
-                    category: "Film-Audio",
-                    categoryClass: "film-audio",
-                    description: "A collection of environment models and experiments created in Blender.",
-                    image: "img/card3.jpg",
-                    page: "projects/image-example.html"
-                },
-
-                {
-                    name: "Cubi",
+                    name: "Deep Down Aliens (Java)",
                     category: "Coding",
                     categoryClass: "code",
-                    description: "A third-person action game focused on responsive combat and animation-driven movement.",
-                    image: "img/card3.jpg",
+                    description: "An unfinished mini-platformer about a small blue alien, made in Java using the Processing application. I created the game physics code and pixel art myself.",
+                    image: "projects/deep-down/CoverImage.png",
+                    page: "projects/image-example.html"
+                },
+                {
+                    name: "Lucky Tower Ultimate (Internship)",
+                    category: "Game Development Internship",
+                    categoryClass: "none",
+                    description: "During my practical semester, I worked for six months at Studio Seufz in Stuttgart, Germany. The experience gave me a lot of insight into the game development industry.",
+                    image: "projects/Lucky-Tower/CoverImage.png",
+                    page: "projects/image-example.html"
+                },
+                {
+                    name: "Showreel",
+                    category: "Animation",
+                    categoryClass: "animation",
+                    description: "This is my showreel, a collection of video clips from various projects.",
+                    image: "projects/Showreel/CoverImage.png",
+                    page: "projects/image-example.html"
+                },
+                
+                {
+                    name: "Amentior Game (Unity)",
+                    category: "Game Development",
+                    categoryClass: "game-dev",
+                    description: "This game was a team project in which we created a 2D escape platformer from the ground up. It is about a mad jester trapped in a dungeon.",
+                    image: "projects/Amentior/CoverImage.png",
                     page: "projects/image-example.html"
                 },
 
                 {
-                    name: "Portfolio Website",
-                    category: "Information Text",
-                    categoryClass: "text",
-                    description: "A responsive portfolio website for showcasing my design and development work.",
-                    image: "img/card3.jpg",
+                    name: "Bachelor Thesis: Root Motion",
+                    category: "Research",
+                    categoryClass: "none",
+                    description: "For my bachelor's thesis, I wrote about the use cases of Root Motion. I analyzed the effects of its use from both a system and player perspective.",
+                    image: "projects/Bachelor-thesis/CoverImage.png",
                     page: "projects/image-example.html"
                 },
 
                 {
-                    name: "Environment Study",
-                    category: "Webdesign",
-                    categoryClass: "web",
-                    description: "A collection of environment models and experiments created in Blender.",
-                    image: "img/card3.jpg",
+                    name: "Coast Guard Character",
+                    category: "3D Modeling",
+                    categoryClass: "3d",
+                    description: "Here, I designed a character and then modeled him in Blender. I sculpted the character first and then retopologized the model while striving for a realistic look.",
+                    image: "projects/Coastguard-henry/CoverImage.png",
                     page: "projects/image-example.html"
-                }
+                },
+
+                {
+                    name: "Foot Placement Code",
+                    category: "Coding",
+                    categoryClass: "code",
+                    description: "To place the feet and correctly angle the knees on uneven terrain in games, I created a script as my own attempt to solve this problem.",
+                    image: "projects/Footing-code/CoverImage.png",
+                    page: "projects/image-example.html"
+                },
+                {
+                    name: "Lend A Hand",
+                    category: "Animation",
+                    categoryClass: "animation",
+                    description: "A hand-drawn, frame-by-frame animation of a green hand annoyed by a fly. The hand and fly get into an interesting fight before eventually reconciling.",
+                    image: "projects/hand-animation/CoverImage.png",
+                    page: "projects/image-example.html"
+                },
+
             ];
 
                         const projectGrid = document.querySelector(".gridProjects");
@@ -248,15 +272,15 @@
 
                 tileP.innerHTML = `
                     <div class="hoverable">
+                        <div class="category category-${project.categoryClass}"> 
+                            ${project.category}
+                        </div>
                         <img src="${project.image}" alt="${project.name}" loading="lazy">
-
+                        
                         <div class="card-body">
-                            <div class="category category-${project.categoryClass}"> 
-                                ${project.category}
-                            </div>
                             <div class="title">${project.name}</div>
                             <div class="description">${project.description}</div>
-                        </div>
+                            </div>
                     </div>
                 `;
 
