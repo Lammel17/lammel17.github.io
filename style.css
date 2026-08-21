@@ -316,7 +316,7 @@ h4 a:hover {
 }
 
 .img-big {
-    max-height: 600px;
+    max-height: 500px;
     max-width: 100%;
     display: block;
     justify-self: center;
@@ -335,7 +335,7 @@ h4 a:hover {
 }
 
 .img-medium {
-    max-height: 350px;
+    max-height: 300px;
     max-width: 100%;
     display: block;
     margin-left: auto;
