@@ -310,6 +310,15 @@ h4 a:hover {
     margin-left: 20px;
 }
 
+.projectainHeader{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+.project-tags{
+    color: rgb(96, 96, 96);
+}
+
 .image-border {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -382,7 +391,6 @@ h4 a:hover {
     padding-bottom: 15px;
     padding-inline: clamp(15px, 4vw, 60px);
     box-sizing: border-box;
-    
 }
 
 
