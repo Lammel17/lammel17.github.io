@@ -163,8 +163,9 @@ h4 a:hover {
 }
 
 .mainTextField {
-    padding-left: 12%;
-    padding-right: 12%;
+    width: min(900px, 100%);
+    justify-self: center;
+    padding: auto;
 }
 
 .textBubbleDiv {
@@ -360,12 +361,11 @@ h4 a:hover {
 .hoverable {
     padding: 5px;
     transition: transform 0.3s ease;
-    background-color: #ffffff00;
+
 }
 
 .hoverable:hover {
     transform: scale(1.05);
-    background-color: #050505;
 }
 
 
@@ -701,7 +701,7 @@ h4 a:hover {
 @media (prefers-color-scheme: dark) {
     body {
         color: #eee;
-        background-color: #050505;
+        background-color: #161616;
     }
     
     p {
