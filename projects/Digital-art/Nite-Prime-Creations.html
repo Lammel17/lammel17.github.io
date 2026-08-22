@@ -46,7 +46,10 @@
             <div class="coverDivFull">
                 <!-- <img class="coverArtFull" src="../../img/image-logo.png" alt="Cover Image" height="512" width="512"></img> -->
             </div>
-            <div class="projectPage-Category category-artwork">  Digital Art  </div>
+            <div class="mainTextField">
+                <div class="projectPage-Category category-artwork">  Digital Art  </div>
+
+            </div>
         </div>
 
         <!-- Description Section -->
@@ -56,24 +59,24 @@
                 <!-- Section -->
                 <h2 class="textAlignLeft">Nite Prime Creations</h2>
 
-                <img class="image-border img-big" src="CoverImage.png" alt="Image"></img>
+                <img class="image-border img-big" src="CoverImage.png" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
 
                 <p class="testJustify"> Long before I even finished school I started to follow my interest in digital art. With my first Wacom tablet, which I bought around 2014, I was immediately hooked on creating my own artworks. Since then have I impvoved and created several pieces of digital art.</p>
                 <p class="testJustify"> Even if I never took of with it, mostly because my interest was more in creating the art itself than sharing it on social media, I got a great use out of it. It was my entryway to the University Ravensburg-Weigarten (RWU) in germany, where I studied for 5 years and found my place on a bridge between design and technic.</p>
 
                 <div class="image-border img-medium-box">
-                    <img class=" img-medium" src="Karla 1 Kopie.jpg" alt="Image"></img>
-                    <img class=" img-medium" src="yasou.png" alt="Image"></img>
-                    <img class=" img-medium" src="troopers1 Kopie.png" alt="Image"></img>
-                    <img class=" img-medium" src="peach saveb.png" alt="Image"></img>
+                    <img class=" img-medium" src="Karla 1 Kopie.jpg" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
+                    <img class=" img-medium" src="yasou.png" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
+                    <img class=" img-medium" src="troopers1 Kopie.png" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
+                    <img class=" img-medium" src="peach saveb.png" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
                 </div>
 
                 <h4 class="testJustify"> About my Development</p>
                 <p class="testJustify"> Since I started drawing with my Wacom tablet I have used Clip Studio paint as drawing programm. In those many years of drawing I have changed my drawing approach often. I started working with vector lines, but ended with using rather sketchy brushes nowdays. Also I tended to work with colors more in the past, as I had the most frustration with them. It takes a lot more energy and time to finish a picture colored. Therefore I recently enjoy it more if i keep it colorless, monochrome. This way I am able to create more finished works in a given time, istead of fiddling with layers on layers of color shades. </p>
                                 
                 <div class="image-border img-medium-box">
-                    <img class=" img-medium" src="item seller.png" alt="Image"></img>
-                    <img class=" img-medium" src="CoverImage2.png" alt="Image"></img>
+                    <img class=" img-medium" src="item seller.png" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
+                    <img class=" img-medium" src="CoverImage2.png" alt="Image" onclick="openPopup(this)" loading="lazy"></img>
                 </div>
 
                 <h4 class="testJustify"> Instagram</p>
@@ -98,6 +101,10 @@
             </div>
         </div>
 
+        <div id="imagePopup" class="imagePopup" onclick="closePopup()">
+            <img id="popupImage" src="" alt="">
+        </div>
+
         <!-- Navigation Script -->
         <script>
             function myFunction() {
@@ -108,6 +115,21 @@
                     x.className = "topnav";
                 }
             }
+
+            function openPopup(image) {
+                const popup = document.getElementById("imagePopup");
+                const popupImage = document.getElementById("popupImage");
+
+                popupImage.src = image.src;
+                popupImage.alt = image.alt;
+                
+                popup.style.display = "flex";
+            }
+        
+            function closePopup() {
+                document.getElementById("imagePopup").style.display = "none";
+            }
+
         </script>
     </body>
 </html>

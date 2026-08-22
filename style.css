@@ -163,7 +163,7 @@ h4 a:hover {
 }
 
 .mainTextField {
-    width: min(900px, 100%);
+    width: min(900px, 95%);
     justify-self: center;
     padding: auto;
 }
@@ -307,8 +307,7 @@ h4 a:hover {
     border-radius: 20px 20px 0px 0px;
     width: 200px;
     margin-top: 74px;
-    margin-left: 12%;
-    margin-right: 12%;
+    margin-left: 20px;
 }
 
 .image-border {
