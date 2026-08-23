@@ -305,7 +305,7 @@ h4 a:hover {
     background-color: #545454;
     border-radius: 20px 20px 0px 0px;
     width: 200px;
-    margin-top: 24px;
+    margin-top: 26px;
     margin-left: 20px;
 }
 
@@ -374,6 +374,7 @@ h4 a:hover {
 .hoverable {
     padding: 5px;
     transition: transform 0.3s ease;
+    cursor: pointer;
 
 }
 
@@ -381,6 +382,9 @@ h4 a:hover {
     transform: scale(1.05);
 }
 
+.clickable {
+    cursor: pointer;
+}
 
 
 
@@ -394,7 +398,7 @@ h4 a:hover {
     width: min(1400px, 100%);
     margin: 0 auto;
     padding-bottom: 15px;
-    padding-inline: clamp(15px, 4vw, 60px);
+    padding-inline: clamp(15px, 5vw, 60px);
     box-sizing: border-box;
 }
 
@@ -530,21 +534,21 @@ h4 a:hover {
 
 .gridArtworks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(290px, 40%), 1fr));
     gap: clamp(5px, 1vw, 15px);
 
-    width: min(1400px, 100%);
+    width: min(1300px, 100%);
     margin: 0 auto;
-    padding-inline: clamp(15px, 4vw, 60px);
+padding-inline: clamp(1px, 4vw, 60px);
     box-sizing: border-box;
 }
 
 .gridArtworkTile {
-    width: min(400px, 100%);
+    width: min(300px, 95%);
     justify-self: center;
     aspect-ratio: 3 / 4;
 
-    padding: 10px;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -597,7 +601,8 @@ h4 a:hover {
 .topnav {
     overflow: hidden;
     background-color: rgb(50, 50, 50);
-    line-height: 1.9;
+    line-height: 30px;
+
 }
 
 .topnav a {
@@ -605,7 +610,6 @@ h4 a:hover {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 0px 11px;
     text-decoration: none;
     font-size: 16px;
     padding-inline: max(20px, 3%);
@@ -751,6 +755,10 @@ h4 a:hover {
     }
     
     .topnav {
+        background-color: rgb(12, 69, 123);
+    }
+
+    .topnav a:hover {
         background-color: rgb(12, 69, 123);
     }
     
