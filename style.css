@@ -320,8 +320,8 @@ h4 a:hover {
 }
 
 .image-border {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .img-big {
@@ -337,24 +337,27 @@ h4 a:hover {
     grid-template-columns: repeat(auto-fit, minmax(min(350px, 40%), 1fr));
     gap: clamp(5px, 1vw, 15px);
     justify-content: center;
-    width: min(1000px, 100%);
+    width: min(800px, 100%);
     margin: 0 auto;
     margin-top: 30px;
     box-sizing: border-box;
 }
 
 .img-medium {
-    max-height: 300px;
+    max-height: 280px;
     max-width: 100%;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 5px;
     margin-top: 5px;
     padding: 0px;
     aspect-ratio: 4/3;
     object-fit: cover;
     object-position: 50% 20%;
+}
+
+.leftVerticalLineThick {
+    border-left: medium solid #676767;
+    
 }
 
 
@@ -657,6 +660,7 @@ h4 a:hover {
 .leftVerticalLine {
     border-left: thin solid #b4adad;
 }
+
 
 .horizontalLine {
     border-bottom: thick solid #b4adad;
