@@ -392,8 +392,8 @@ h4 a:hover {
 /*Project grid and Tiles--------------------------*/
 .gridProjects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
-    gap: clamp(5px, 1vw, 15px);
+    grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
+    gap: clamp(5px, 0.5vw, 5px);
     justify-content: center;
     width: min(1400px, 100%);
     margin: 0 auto;
@@ -534,7 +534,7 @@ h4 a:hover {
 
 .gridArtworks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(285px, 40%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(275px, 40%), 1fr));
     gap: 15px clamp(0px, 0vw, 0px);
 
     width: min(1300px, 100%);
