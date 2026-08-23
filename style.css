@@ -534,12 +534,12 @@ h4 a:hover {
 
 .gridArtworks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(290px, 40%), 1fr));
-    gap: clamp(5px, 1vw, 15px);
+    grid-template-columns: repeat(auto-fit, minmax(min(285px, 40%), 1fr));
+    gap: 15px clamp(0px, 0vw, 0px);
 
     width: min(1300px, 100%);
     margin: 0 auto;
-padding-inline: clamp(1px, 4vw, 60px);
+    padding-inline: clamp(1px, 4vw, 60px);
     box-sizing: border-box;
 }
 
