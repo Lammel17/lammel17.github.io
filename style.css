@@ -19,8 +19,7 @@ a {
 /*project pages--------------------------*/
 p {
     color: rgb(36,36,38);
-    font-size: 1.6;
-    font-size: 1.1rem;
+    font-size: 1.0rem;
     font-weight: normal;
     margin-bottom: 0px;
     margin-top: 0px;
@@ -51,7 +50,7 @@ h3 {
 }
 
 h4 {
-    font-size: clamp(1.15rem, 2vw, 1.4rem);
+    font-size: clamp(1.15rem, 2vw, 1.25rem);
     margin-bottom: 25px;
     margin-top: 30px;
 }
@@ -163,7 +162,7 @@ h4 a:hover {
 }
 
 .mainTextField {
-    width: min(900px, 95%);
+    width: min(850px, 95%);
     justify-self: center;
     padding: auto;
 }
@@ -171,11 +170,11 @@ h4 a:hover {
 .textBubbleDiv {
     background-color: rgb(225,225,230);
     text-align: center;
-    max-width:  300px;
+    max-width:  220px;
+    min-height: 20px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 8px;
     margin-top: 100px;
     margin-bottom: 25px;
     border-radius: 30px 30px 30px 30px;
@@ -301,7 +300,7 @@ h4 a:hover {
 .projectPage-Category{
     font-size: 1em;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 24px;
     color: #d9d9d9;
     background-color: #545454;
     border-radius: 20px 20px 0px 0px;
@@ -310,8 +309,8 @@ h4 a:hover {
     margin-left: 20px;
 }
 
-.projectainHeader{
-    margin-top: 20px;
+.projectMainHeader{
+    margin-top: 0;
     margin-bottom: 0px;
 }
 
@@ -320,8 +319,8 @@ h4 a:hover {
 }
 
 .image-border {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .img-big {
@@ -339,20 +338,23 @@ h4 a:hover {
     justify-content: center;
     width: min(800px, 100%);
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: border-box;
 }
 
 .img-medium {
-    max-height: 280px;
+    max-height: 250px;
     max-width: 100%;
     display: block;
     margin-bottom: 5px;
     margin-top: 5px;
     padding: 0px;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     object-fit: cover;
     object-position: 50% 20%;
+    justify-self: center;
 }
 
 .leftVerticalLineThick {
@@ -606,6 +608,7 @@ h4 a:hover {
     padding: 0px 11px;
     text-decoration: none;
     font-size: 16px;
+    padding-inline: max(20px, 3%);
 }
 
 .topnav a:hover {
