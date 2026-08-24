@@ -2,9 +2,11 @@ body {
     height: 100%;
     color: #252525;
     background-color: #eee;
-    margin: 0px;
+    margin: 0px; 
     line-height: 1.5;
     display: block;
+    font-family:'Courier New', Courier, monospace;
+    font-family:monospace ;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
 
@@ -79,6 +81,7 @@ h4 a:hover {
     background-clip: padding-box;
     -moz-background-clip: padding;
     -webkit-transform: translateZ(0);
+
 }
 
 .coverArt {
@@ -95,7 +98,7 @@ h4 a:hover {
 }
 
 .coverArtFull {
-    max-height: 80%;
+    max-height: 40%;
     width: auto;
     position: absolute;
     top: 0;
@@ -106,9 +109,9 @@ h4 a:hover {
 }
 
 .coverDiv {
-    height: 500px;
+    height: 450px;
     position: relative;
-    padding-top: 40px;
+    padding-top: 35px;
 }
 
 .coverDivFull {
@@ -254,7 +257,7 @@ h4 a:hover {
 
 
 .big-TopBackground-image {
-    height: 400px;
+    height: 365px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -721,6 +724,11 @@ h4 a:hover {
         color: #eee;
         background-color: #161616;
     }
+
+    .topnav {
+        background-color: rgb(12, 69, 123);
+    }
+
     
     p {
         color: #eee;
@@ -758,8 +766,5 @@ h4 a:hover {
         background-color: rgb(12, 69, 123);
     }
 
-    .topnav a:hover {
-        background-color: rgb(12, 69, 123);
-    }
     
 }

@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>YOUR_SITE | Portfolio Template</title>
-            <meta name="description" content="YOUR_SITE description">
-            <meta name="author" content="YOUR_NAME">
 
-            <!-- Embed page for social media posts -->
-            <meta property="og:description" content="YOUR_SITE description">
-            <meta property="og:title" content="YOUR_SITE | Portfolio Template">
-            <meta property="og:type" content="website">
-            <meta property="og:url" content="http://www.YOUR_SITE.com">
-            <meta property="og:image" content="http://www.YOUR_SITE.com/img/logo.png">
-            <meta property=​"og:​site_name" content=​"YOUR_SITE.com">
+<head>
+    <!-- Navigation Script -->
+    <script type="module" src="functions.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUR_SITE | Portfolio Template</title>
+    <meta name="description" content="YOUR_SITE description">
+    <meta name="author" content="YOUR_NAME">
 
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:site" content="@mobypixel">
-            <meta name="twitter:creator" content="@mobypixel">
-            <meta name="twitter:title" content="YOUR_SITE | Portfolio Template">
-            <meta name="twitter:description" content="YOUR_SITE description">
-            <meta name="twitter:image" content="http://www.YOUR_SITE.com/img/logo.png">
+    <!-- Embed page for social media posts -->
+    <meta property="og:description" content="YOUR_SITE description">
+    <meta property="og:title" content="YOUR_SITE | Portfolio Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.YOUR_SITE.com">
+    <meta property="og:image" content="http://www.YOUR_SITE.com/img/logo.png">
+    <meta property=​"og:​site_name" content=​"YOUR_SITE.com">
 
-            <!-- Favicon -->
-            <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mobypixel">
+    <meta name="twitter:creator" content="@mobypixel">
+    <meta name="twitter:title" content="YOUR_SITE | Portfolio Template">
+    <meta name="twitter:description" content="YOUR_SITE description">
+    <meta name="twitter:image" content="http://www.YOUR_SITE.com/img/logo.png">
 
-            <!-- Page Style -->
-            <link rel="stylesheet" type="text/css" href="style.css?version=1">
-    </head>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <body>
+    <!-- Page Style -->
+    <link rel="stylesheet" type="text/css" href="style.css?version=1">
+</head>
 
-        <!-- Navigation Bar -->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="rightVerticalLine">Main Page</a>
-            <a href="My-Projects.html">All Projects</a>
-            <a href="My-Art.html">All Artworks</a>
-            <a href="About-Me.html">About Me</a>
-            <a href="Contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
-            </a>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="rightVerticalLine">Main Page</a>
+        <a href="My-Projects.html">All Projects</a>
+        <a href="My-Art.html">All Artworks</a>
+        <a href="About-Me.html">About Me</a>
+        <a href="Contact.html">Contact</a>
+        <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png"
+                height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
+        </a>
+    </div>
+
+    <!-- Header with Full-Size Image -->
+    <div class="medium-TopBackground-image" style="background-image: url('img/background/header-bg.jpg');">
+        <div class="coverDivFull">
+            <img class="coverArtFull" src="img/ArtworksLabel2.png" alt="Cover Image" height="112" width="112"></img>
         </div>
+    </div>
 
-         <!-- Header with Full-Size Image -->
-        <div class="medium-TopBackground-image" style="background-image: url('img/background/header-bg.jpg');">
-            <div class="coverDivFull">
-                <img class="coverArtFull" src="img/image-logo-crop.png" alt="Cover Image" height="112" width="112"></img>
-            </div>
-        </div>
-
-                <!-- Description Section -->
-        <div class="descriptionDiv">
-            <div class="mainTextField">
-                <!-- Section -->
-                <h2 class="textAlignLeft">Welcome to my Space</h2>
-                <p class="testJustify"> I am a <a href="https://www.gamecampus.de/berufsbild/technical-art" target="_blank">Technical Artist</a> from germany, trying to work on passionate projects whenever I can. Those can range from coding a game, 3D modeling, animation, game design, to digital art or even world building. My speciality lies in creating a good motion and action feel in a third person 3D game. </p>
-            </div>
-        </div>
-
-        <div class="descriptionDiv">
-
+    <!-- Description Section -->
+    <div class="descriptionDiv">
+        <div class="mainTextField">
             <!-- Section -->
-            <h2>Artwork Archive</h2>
+            <h2 class="textAlignLeft">Artwork Archive</h2>
+            <p class="testJustify">
+                Here I am showcasing a collection of most of my finished artworks, both monochrome and colored,
+                organized roughly chronologically from 2014 to the present.
+                <a href="My-Art.html">Learn more about my development as an artist here.</a>
+            </p>
+        </div>
+    </div>
 
-            <!-- Image Grid -->
-            <div class="gridArtworks">
+    <div class="descriptionDiv">
 
-                <!-- Image Item 
+        <!-- Section -->
+        <h2>All Artworks</h2>
+
+        <!-- Image Grid -->
+        <div class="gridArtworks" id="gridAllArtworks"></div>
+
+        <!-- Image Item 
                 <div class="gridArtworkTile" href="#" onclick="openPopup(this.querySelector('img')); return false;">
                     <div class="hoverable">
                         <div class="gridArtworkTileImage">
@@ -74,13 +82,13 @@
                         </div>
                     </div>
                 </div> -->
-                
-            </div>
-        </div>
 
-        <h4>You reached the end, thank you for your visit!</h4>
+    </div>
+    </div>
 
-   <!-- Share Your Socials -->
+    <h4>You reached the end, thank you for your visit!</h4>
+
+    <!-- Share Your Socials -->
     <div class="textBubbleDiv hoverable" id="emailCopy">
         <span class="email">- lukaskonstanz@web.de -</span>
         <!--
@@ -105,186 +113,6 @@
         <img id="popupImage" src="" alt="">
     </div>
 
-        <!-- Navigation Script -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
+</body>
 
-
-            function openPopup(image) {
-            const popup = document.getElementById("imagePopup");
-            const popupImage = document.getElementById("popupImage");
-
-            popupImage.src = image.src;
-            popupImage.alt = image.alt;
-
-            popup.style.display = "flex";
-            }
-
-            function closePopup() {
-            document.getElementById("imagePopup").style.display = "none";
-            }
-
-
-
-            const artworks = [
-            "Ester.png",
-            "queela Kopie 4.png",
-            "Evelius dark.png",
-            "brush girls 4.png",
-            "3 RWU 23.png",
-            "pirate girl 2.png",
-            "TESS 1.png",
-            "sleeper medis. finish perfect.png",
-            "broken face 9.1.png",
-            "scolar.png",
-            "dwarf 1.png",
-            "broken face 5.png",
-            "thick leg 7.7 1.png",
-            "medis update 1.png",
-            "new logo 4.png",
-            "faces scared.png",
-            "ci 2.png",
-            "drag.png",
-            "elf2.png",
-            "copper knight.png",
-            "city girl 1.png",
-            "space ship.png",
-            "faces try11.png",
-            "Illustrtfugonfd.png",
-            "hand test.png",
-            "stuff try2.png",
-            "item seller.png",
-            "cami portrait2.png",
-            "portrait flow.png",
-            "face hisabik.png",
-            "animals2.png",
-            "robooot.png",
-            "Illustrtfugon.png",
-            "pose 3.png",
-            "maiden.png",
-            "Fit4.png",
-            "cat.png",
-            "hand3.png",
-            "concept artt1.png",
-            "fey.png",
-            "hand stange.png",
-            "taxas.png",
-            "anor londo.png",
-            "sitlww.png",
-            "newie.png",
-            "soft style.png",
-            "badey.png",
-            "nugt mm - Kopie (2).png",
-            "2 malady2.jpg",
-            "stuff try.jpg",
-            "4 woody - Kopie.jpg",
-            "sleeper medis. finish suss.png",
-            "ma andro final corrected.png",
-            "mh char Ko.png",
-            "ägypt.png",
-            "jojo 2.png",
-            "randm.png",
-            "peach saveb.png",
-            "haus.png",
-            "asoka.png",
-            "giant godness - Kopie.png",
-            "bergg.png",
-            "bergg - Kopie.png",
-            "myselff.png",
-            "QZ 2 Kopie.png",
-            "payaa Kopie.jpg",
-            "awakeeo.png",
-            "andro2 - Kopie.png",
-            "style medica2 Kopie.png",
-            "bendi Kopie 2.png",
-            "nixe better Kopie.png",
-            "medusa better Kopie.png",
-            "traffic lights Kopie.png",
-            "black tear Kopie.png",
-            "goath2.png",
-            "bend Ko Kopie.png",
-            "showman Kopie.png",
-            "troopers1 Kopie.png",
-            "me Kopie.png",
-            "green2 Kopie.png",
-            "comission 1 Kopie.png",
-            "nun final 1.png",
-            "artoriass.png",
-            "connor,real Kopie.png",
-            "kegy.png",
-            "robo.png",
-            "pyroo Kopie.png",
-            "nice2 Kopie 2.png",
-            "tears Kopie.png",
-            "birdhouse big Kopie.png",
-            "tammy Kopie 4.png",
-            "appf2 Kopie.png",
-            "ann Kopie.png",
-            "laura Kopie.png",
-            "hgf Kopie.png",
-            "cornibus1 Kopie.png",
-            "yasou.png",
-            "witch Kopie.png",
-            "sketch w.e.1.2 Kopie.png",
-            "mar-splatoon Kopie 2.jpg",
-            "Kida.. Kopie.jpg",
-            "MM FK Kopie.jpg",
-            "solair 1.jpg",
-            "Najka like Kopie.jpg",
-            "MIMI.png",
-            "karla 2 Kopie.jpg",
-            "Karla 1 Kopie.jpg",
-            "Ms. Lin Kopie.jpg",
-            "Dancer finish Kopie.jpg",
-            "hand 1.1 Kopie.jpg",
-            "dragonslayer armor Kopie.png",
-            "high lord wolnir Kopie.png",
-            "crystal saga Kopie.png",
-            "legion of the abyss Kopie.png",
-            "myst Kopie.jpg",
-            "emely Kopie.jpg",
-            "logo my Kopie.png",
-            "tracer fertig 0.2 Kopie.jpg",
-            "3 Kopie.jpg",
-            "riven ice Kopie 2.jpg",
-            "u new 1 Kopie.png",
-            "jesustoaster Kopie.png",
-            "sarah 11 K Kopie.jpg",
-            "shildkröte Kopie.jpg",
-            "u new .1.5 Kopie.jpg",
-            "firekeeper 2.6 fertig Kopie.jpg",
-            "the magic tacoranger 1.2 fertig Kopie.jpg",
-            "Sarah 10.4 fertig Kopie.jpg",
-            "Amilia 4 fertig Kopie.jpg",
-            "Lena .1.5.2 fertig Kopie.jpg",
-            "Riven Scann 13.2 fertig Kopie.jpg",
-            "Wolf 2 Kopie.jpg",
-            "Clara 1.7.2.2 fertig Kopie.jpg"
-            ];
-
-            const grid = document.querySelector(".gridArtworks");
-
-            artworks.forEach(filename => {
-            const tile = document.createElement("div");
-
-            tile.className = "gridArtworkTile";
-
-            tile.innerHTML = `
-            <div class="hoverable" onclick="openPopup(this.querySelector('img'))">
-                <img src="artworks/${filename}" alt="" loading="lazy">
-            </div>
-            `;
-
-            grid.appendChild(tile);
-            });
-
-        </script>
-    </body>
 </html>
