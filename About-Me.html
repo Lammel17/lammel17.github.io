@@ -1,107 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>YOUR_SITE | Portfolio Template</title>
-            <meta name="description" content="YOUR_SITE description">
-            <meta name="author" content="YOUR_NAME">
 
-            <!-- Embed page for social media posts -->
-            <meta property="og:description" content="YOUR_SITE description">
-            <meta property="og:title" content="YOUR_SITE | Portfolio Template">
-            <meta property="og:type" content="website">
-            <meta property="og:url" content="http://www.YOUR_SITE.com">
-            <meta property="og:image" content="http://www.YOUR_SITE.com/img/logo.png">
-            <meta property=​"og:​site_name" content=​"YOUR_SITE.com">
+<head>
+    <!-- Navigation Script -->
+    <script type="module" src="../../functions.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lukas Müller | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta name="author" content="YOUR_NAME">
 
-            <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:site" content="@mobypixel">
-            <meta name="twitter:creator" content="@mobypixel">
-            <meta name="twitter:title" content="YOUR_SITE | Portfolio Template">
-            <meta name="twitter:description" content="YOUR_SITE description">
-            <meta name="twitter:image" content="http://www.YOUR_SITE.com/img/logo.png">
+    <!-- Embed page for social media posts -->
+    <meta property="og:description" content="YOUR_SITE description">
+    <meta property="og:title" content="YOUR_SITE | Portfolio Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://www.YOUR_SITE.com">
+    <meta property="og:image" content="http://www.YOUR_SITE.com/img/logo.png">
+    <meta property=​"og:​site_name" content=​"YOUR_SITE.com">
 
-            <!-- Favicon -->
-            <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@mobypixel">
+    <meta name="twitter:creator" content="@mobypixel">
+    <meta name="twitter:title" content="YOUR_SITE | Portfolio Template">
+    <meta name="twitter:description" content="YOUR_SITE description">
+    <meta name="twitter:image" content="http://www.YOUR_SITE.com/img/logo.png">
 
-            <!-- Page Style -->
-            <link rel="stylesheet" type="text/css" href="style.css?version=1">
-    </head>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
 
-    <body>
+    <!-- Page Style -->
+    <link rel="stylesheet" type="text/css" href="style.css?version=1">
+</head>
 
-        <!-- Navigation Bar -->
-        <div class="topnav" id="myTopnav">
-            <a href="index.html" class="rightVerticalLine">Main Page</a>
-            <a href="My-Projects.html">All Projects</a>
-            <a href="My-Art.html">All Artworks</a>
-            <a href="About-Me.html">About Me</a>
-            <a href="Contact.html">Contact</a>
-            <a href="javascript:void(0);" class="icon leftVerticalLine" onclick="myFunction()"><img src="img/menu.png" height="30" width="30" alt="Menu Button" aria-label="Menu Button"></img>
-            </a>
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- Header with Full-Size Image -->
+    <div class="small-TopBackground-image" style="background-image: url('img/background/header-bg.jpg');">
+        <div class="coverDivFull">
+            <!-- <img class="coverArtFull" src="img/image-logo.png" alt="Cover Image" height="512" width="512"></img>-->
         </div>
+        <!-- Full-Size Image -->
 
-        <!-- Header with Full-Size Image -->
-        <div class="small-TopBackground-image" style="background-image: url('img/background/header-bg.jpg');">
-            <div class="coverDivFull">
-                <!-- <img class="coverArtFull" src="img/image-logo.png" alt="Cover Image" height="512" width="512"></img>-->
-            </div>
-            <!-- Full-Size Image -->
-            
-        </div>
-        <img class="img-big" src="img/profile/_DSC6911.jpg" alt="Image"></img>
-        
-
-         <!-- Description Section -->
-        <div class="descriptionDiv">
-            <div class="mainTextField">
-                <!-- Section -->
-                <h2 class="textAlignLeft">Welcome to my Space</h2>
-
-                <p class="testJustify"> I am a <a href="https://www.gamecampus.de/berufsbild/technical-art" target="_blank">Technical Artist</a> from germany, trying to work on passionate projects whenever I can. Those can range from coding a game, 3D modeling, animation, game design, to digital art or even world building. My speciality lies in creating a good motion and action feel in a third person 3D game. </p>
-                <p>Please enjoy your time here!</p>
-                <p style="text-align: right;"><strong>- Lukas Müller</strong><br>
-                <h2 class="textAlignLeft">Lebenslauf</h2>
-            
-                </div>
-        </div>
-
-   <!-- Share Your Socials -->
-    <div class="textBubbleDiv hoverable" id="emailCopy">
-        <span class="email">- lukaskonstanz@web.de -</span>
-        <!--
-            <p class="light">lukaskonstanz@web.de :
-            <a href="https://www.twitter.com/YOUR_NAME" target="_blank"><img class="socialLink" src="../../img/twitter.png" alt="Twitter" height="25" width="25"></img></a>
-            <a href="https://www.facebook.com/YOUR_NAME" target="_blank"><img class="socialLink" src="../../img/facebook.png" alt="Facebook" height="25" width="25"></img></a>
-            <a href="https://www.youtube.com/YOUR_NAME" target="_blank"><img class="socialLink2" src="../../img/youtube.png" alt="YouTube" height="25" width="25"></img></a>
-        </p>
-        -->
     </div>
+    <img class="img-big" src="img/profile/_DSC6911.jpg" alt="Image"></img>
 
-    <div class="contact">
-        <div class="contact-body mainTextField">
+
+    <!-- Description Section -->
+    <div class="descriptionDiv">
+        <div class="mainTextField">
             <!-- Section -->
-            <p>Tap the email address to copy it, or <i><a href="Contact.html"
-                        aria-label="Download Portfolio Template Button">check out the contact page here.</a>.</i></p>
+            <h2 class="textAlignLeft">Welcome to my Space</h2>
+
+            <p class="testJustify"> I am a <a href="https://www.gamecampus.de/berufsbild/technical-art"
+                    target="_blank">Technical Artist</a> from germany, trying to work on passionate projects whenever I
+                can. Those can range from coding a game, 3D modeling, animation, game design, to digital art or even
+                world building. My speciality lies in creating a good motion and action feel in a third person 3D game.
+            </p>
+            <p>Please enjoy your time here!</p>
+            <p style="text-align: right;"><strong>- Lukas Müller</strong><br>
+            <h2 class="textAlignLeft">Lebenslauf</h2>
+
         </div>
     </div>
+
+    <!-- footer contact section -->
+    <div id="contactSection"></div>
 
 
     <div id="imagePopup" class="imagePopup">
         <img id="popupImage" src="" alt="">
     </div>
 
-        <!-- Navigation Script -->
-        <script>
-            function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-        </script>
-    </body>
+</body>
+
 </html>

@@ -1,4 +1,64 @@
 
+//create header-----------------------------------------------
+const navigation = document.getElementById("navigation");
+
+if (navigation) {
+    navigation.innerHTML = `
+        <div class="topnav" id="myTopnav">
+            <a href="/index.html" class="rightVerticalLine">Main Page</a>
+            <a href="/My-Projects.html">All Projects</a>
+            <a href="/My-Art.html">All Artworks</a>
+            <a href="/About-Me.html">About Me</a>
+            <a href="/Contact.html">Contact</a>
+            <a href="#" class="icon leftVerticalLine" id="menuButton">
+                <img src="/img/menu.png"
+                     height="30"
+                     width="30"
+                     alt="Menu Button">
+            </a>
+        </div>
+    `;
+
+    document.getElementById("menuButton").addEventListener("click", myFunction);
+}
+
+
+//create footer-----------------------------------------------
+createContactSection();
+
+function createContactSection() {
+    const contact = document.getElementById("contactSection");
+
+    if (!contact) return;
+
+    contact.innerHTML = `
+        <div class="textBubbleDiv hoverable" id="emailCopy">
+            <span class="email">- lukaskonstanz@web.de -</span>
+        </div>
+
+        <div class="contact">
+            <div class="contact-body mainTextField">
+                <p>
+                    Tap the email address to copy it, or
+                    <i>
+                        <a href="/Contact.html">
+                            check out the contact page here.
+                        </a>.
+                    </i>
+                </p>
+            </div>
+        </div>
+    `;
+
+    const emailCopy = document.getElementById("emailCopy");
+
+    emailCopy.addEventListener("click", () => {
+        copyEmail(emailCopy.querySelector(".email"));
+    });
+}
+
+
+
 //unfold header-----------------------------------------------
 function myFunction() {
     var x = document.getElementById("myTopnav");
