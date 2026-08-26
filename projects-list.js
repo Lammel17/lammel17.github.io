@@ -297,7 +297,7 @@ export const allProjects = [
         categoryClass: "code",
         description: "When learning to code, it is useful to create multiple small projects that cover different concepts individually.",
         image: "projects/Java-Coding/CoverImage.png",
-        page: "projects/image-example.html"
+        page: "projects/Java-Coding/Java_Coding_Excercise.html"
     },
 
     {
