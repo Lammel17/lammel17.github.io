@@ -279,7 +279,7 @@ export const allProjects = [
         categoryClass: "animation",
         description: "A hand-drawn, frame-by-frame animation of a green hand annoyed by a fly. The hand and fly get into an interesting fight before eventually reconciling.",
         image: "projects/hand-animation/CoverImage.png",
-        page: "projects/image-example.html"
+        page: "projects/hand-animation/hand_animation.html"
     },
 
     {
@@ -288,7 +288,7 @@ export const allProjects = [
         categoryClass: "film-audio",
         description: "This short film explores the depressing pressure created by the feeling of monotony. I worked in a small team, where I helped with shooting and editing the film.",
         image: "projects/Monotonie/CoverImage.png",
-        page: "projects/image-example.html"
+        page: "projects/Monotonie/monotone_film.html"
     },
 
     {
