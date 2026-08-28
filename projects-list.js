@@ -261,7 +261,7 @@ export const allProjects = [
         categoryClass: "code",
         description: "An unfinished mini-platformer about a small blue alien, made in Java using the Processing application. I created the game physics code and pixel art myself.",
         image: "projects/deep-down/CoverImage.png",
-        page: "projects/image-example.html"
+        page: "projects/deep-down/deep_down_aliens.html"
     },
 
     {
@@ -270,7 +270,7 @@ export const allProjects = [
         categoryClass: "3d",
         description: "Here, I designed a character and then modeled him in Blender. I sculpted the character first and then retopologized the model while striving for a realistic look.",
         image: "projects/Coastguard-henry/CoverImage.png",
-        page: "projects/image-example.html"
+        page: "projects/Coastguard-henry/coastguard.html"
     },
 
     {
