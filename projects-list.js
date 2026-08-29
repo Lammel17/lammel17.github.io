@@ -252,7 +252,7 @@ export const allProjects = [
         categoryClass: "film-audio",
         description: "In this short film, I worked in a team to present a theoretical photovoltaic canopy for a car park. The goal was to market the concept.",
         image: "projects/visual-storytelling/CoverImage.png",
-        page: "projects/visual-storytelling/photovoltaic_canopy.html"
+        page: "projects/visual-storytelling/photovoltaic-canopy.html"
     },
 
     {
