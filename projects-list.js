@@ -31,8 +31,8 @@ export const favouriteProjects = [
         category: "3D Modelling",
         categoryClass: "3d",
         description: "Ester is a 3D character model made in Blender based on a concept sketch. I also experimented with rigging the model and created a short animation.",
-        image: "/projects/esteria/CoverImage.png",
-        page: "/projects/esteria/project_page.html"
+        image: "/projects/ester/CoverImage.png",
+        page: "/projects/ester/project_page.html"
     },
 
     {
@@ -197,8 +197,8 @@ export const allProjects = [
         category: "3D Modelling",
         categoryClass: "3d",
         description: "Ester is a 3D character model made in Blender based on a concept sketch. I also experimented with rigging the model and created a short animation.",
-        image: "/projects/esteria/CoverImage.png",
-        page: "/projects/esteria/project_page.html"
+        image: "/projects/ester/CoverImage.png",
+        page: "/projects/ester/project_page.html"
     },
 
     {
