@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Navigation Script -->
+    <script type="module" src="/functions.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site | Lukas Müller</title>
+    <meta name="description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta name="author" content="Lukas Müller">
+
+    <!-- Embed page for social media posts -->
+    <meta property="og:description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta property="og:title" content="Portfolio Site | Lukas Müller">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lammel17.github.io/index.html">
+    <meta property="og:image" content="https://lammel17.github.io/index.html/img/preview.png">
+    <meta property=​"og:​site_name" content=​"Portfolio_Site_|_Lukas_Müller">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/faviconNew.png">
+
+    <!-- Page Style -->
+    <link rel="stylesheet" type="text/css" href="/style.css?version=1">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- Header with Full-Size Image -->
+    <div class="small-TopBackground-image" style="background-image: url('../../img/background/header-bg.jpg');">
+        <div class="coverDivFull">
+            <!-- <img class="coverArtFull" src="../../img/image-logo.png" alt="Cover Image" height="512" width="512"></img> -->
+        </div>
+        <div class="mainTextField">
+            <div class="projectPage-Category category-film-audio"> Film-Audio </div>
+
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="descriptionDiv">
+        <div class="mainTextField">
+            <p class="date"><i>2023</i></p>
+            <!-- Section -->
+            <h2 class="projectMainHeader textAlignLeft">Photovoltaic Canopy</h2>
+            <p class="project-tags">Tags: video-production, davinci-resolve, interview</p>
+
+            <div class="img-medium-box">
+                <img class="popupImage clickable image-border img-big" src="CoverImage.png" alt="Image" loading="lazy">
+            </div>
+
+            <p class="testJustify"> 
+                Memory Snake is a simple card game for two players, or rather, the concept for a card game. 
+                I developed the concept and rules and tested the game on volunteers. It proved to be an enjoyable game.
+                I then designed the tiles as sections of a snake, hence the name.
+
+            </p>
+
+            <p class="testJustify"> 
+                The design for the tiles were drawn in Clip Studio Paint and printed out afterwards.
+
+            </p>
+
+            <div class="leftVerticalLineThick">
+                <div class="image-border img-medium-box">
+                    <img class="popupImage clickable img-medium hoverable" src="snake finale1.png" alt="Image"
+                        onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-medium hoverable" src="snake finale2.png" alt="Image"
+                        onclick="openPopup(this)" loading="lazy">
+                </div>
+            </div>
+            <!--
+            <div class="img-medium-box ">
+                <img class="popupImage clickable image-border img-big" src="snake finale2.png" alt="Image" loading="lazy">
+                <img class="popupImage clickable image-border img-big" src="snake finale1.png" alt="Image" loading="lazy">
+            </div>
+            -->
+
+            <h4 class="textAlignLeft">How is it played?</h4>
+
+            <p>
+                Both players draw the shape of the snake using which is possible to lay out with the given tiles (12), preferably on graph paper.
+                One player then begins to guess the shape of their opponent's snake, which is hidden from them.
+                The tail, the first tile, is placed correctly by the opponent, and the player then starts placing tiles to shape the snake.
+                When a tile is placed incorrectly, the players switch roles, with the opponent now guessing the player's snake.
+                Intersections are allowed, with intersecting tiles being placed on top of the non-intersecting tile.
+            
+            </p>
+            
+            <p>
+                The goal is to remember the previous steps of the correctly placed tiles after a switch and continue from there.
+                When one player is able to correctly recreate the entire shape of their opponent's drawn down snake, they win.
+            </p>
+           
+                        <div class="leftVerticalLineThick">
+                <div class="image-border img-medium-box">
+                    <img class="popupImage clickable img-medium-box hoverable" src="WhatsApp Image 2026-08-30 at 22.38.33 1.jpeg" alt="Image"
+                        onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-medium-box hoverable" src="WhatsApp Image 2026-08-30 at 22.38.33.jpeg" alt="Image"
+                        onclick="openPopup(this)" loading="lazy">
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- footer contact section -->
+    <div id="contactSection"></div>
+
+    <div id="imagePopup" class="imagePopup">
+        <img id="popupImage" src="" alt="">
+    </div>
+
+</body>
+
+</html>
