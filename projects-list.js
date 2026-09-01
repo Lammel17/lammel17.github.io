@@ -220,7 +220,7 @@ export const allProjects = [
     },
 
     {
-        name: "Sound Design (Dark Souls 2 Video)",
+        name: "Sound Design Challenge",
         category: "Film-Audio",
         categoryClass: "film-audio",
         description: "With this project, I challenged myself to give a Dark Souls cinematic a new sound design. It was particularly interesting as a person with hearing impairment.",
