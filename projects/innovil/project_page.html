@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Navigation Script -->
+    <script type="module" src="/functions.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site | Lukas Müller</title>
+    <meta name="description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta name="author" content="Lukas Müller">
+
+    <!-- Embed page for social media posts -->
+    <meta property="og:description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta property="og:title" content="Portfolio Site | Lukas Müller">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lammel17.github.io/index.html">
+    <meta property="og:image" content="https://lammel17.github.io/index.html/img/preview.png">
+    <meta property=​"og:​site_name" content=​"Portfolio_Site_|_Lukas_Müller">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/faviconNew.png">
+
+    <!-- Page Style -->
+    <link rel="stylesheet" type="text/css" href="/style.css?version=1">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- Header with Full-Size Image -->
+    <div class="small-TopBackground-image" style="background-image: url('../../img/background/header-bg.jpg');">
+        <div class="coverDivFull">
+            <!-- <img class="coverArtFull" src="../../img/image-logo.png" alt="Cover Image" height="512" width="512"></img> -->
+        </div>
+        <div class="mainTextField">
+            <div class="projectPage-Category category-game-dev"> Game Development </div>
+
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="descriptionDiv">
+        <div class="mainTextField">
+            <p class="date"><i>2024</i></p>
+            <!-- Section -->
+            <h2 class="projectMainHeader textAlignLeft">Innovil: A Souls-Like Boss Fight</h2>
+            <p class="project-tags">Tags: unity, game-design, coding, blender, souls-like, github</p>
+
+            <div class="img-medium-box">
+                <img class="popupImage clickable image-border img-big" src="CoverImage.png" alt="Image" loading="lazy">
+            </div>
+
+            <p class="testJustify"> 
+                Innovil is a recreation of a souls-like boss fight I have build completely fromm grounds up.
+                It is the project I was the most passioned for at the time, trying to do all parts myself to build a satisfying fight.
+                I have always been a great fan of the souls titles from Framsoftware. 
+                With that inspiration I developed an idea for a boss monster, even long before I started the development.
+            </p>
+            <p class="testJustify">
+                Click on this <a
+                    href="https://drive.google.com/file/d/1a-FtmKCo2CKtyKR5FQ7Y5_9q0k2w87tG/view?usp=drive_link" target="_blank">GitHub</a> 
+                    link to visit the github release page, where you can find the download to the game. Extract the folder, and execute the .exe file. 
+                    The game is playable with an Xbox controller or when opened via Steam using the controller button mapping.
+            </p>
+            
+            <h4 class="textAlignLeft">Development Process</h4>
+            <p class="testJustify"> 
+                Hoverbike is a solo-developed short game created in Unity. The idea was to control a hoverbike and explore an open area with ancient ruins.
+                I started by coding the behaviour of the hoverbike and then worked on the portal feature, which turned out really well.
+                Then I modeled the hoverbike in Blender and built the environment using <a href="https://assetstore.unity.com/packages/3d/environments/low-poly-nature-bundle-223104" target="_blank">LMHPOLY</a> assets.
+
+            </p>
+            
+            <div class="leftVerticalLineThick">
+                <div class="image-border img-medium-box">
+                    <video width="100%" controls="">
+                        <source src="Aufzeichnung 2023-11-27 190352.mp4" type="video/mp4">
+                    </video>
+                    <video width="100%" controls="">
+                        <source src="Aufzeichnung 2023-12-27 162247.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <h4 class="textAlignLeft">The Gate</h4>
+            <p class="testJustify"> 
+                When designing the portal feature, I encountered a problem. 
+                While I found inspiration for solving the seamless transition by having a plane that renders an image of the view relative to the other portal, 
+                I still had to solve the problem of what happens to the surrounding environment when viewed from a third-person perspective. 
+                Because the surroundings would change instantly when viewed from outside the hoverbike's point of view, I had to force the camera's position to only show the portal. 
+                This behaviour can be seen in the video at the end.
+                
+            </p>
+            <div class="leftVerticalLineThick">
+                <div class="image-border img-medium-box">
+                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 153023.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 153036.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                </div>
+            </div>
+            <h4 class="textAlignLeft">Movement and Features</h4>
+            <p class="testJustify"> 
+                The player can move freely in 360°, accelerate, brake, turn on the spot, or use nitro.
+                Nitro comes in three stages: red, yellow, and blue. Using nitro itself is not faster than normal speed, but when it is stacked by timing each use correctly, the next nitro input increases speed, up to blue nitro.
+                
+            </p>
+            <div class="leftVerticalLineThick">
+                <div class="image-border img-medium-box">
+                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 152712.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 152807.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                </div>
+            </div>
+            <h4 class="textAlignLeft">Gameplay</h4>
+            <p class="testJustify"> 
+                This video shows a short part of the second and third world, with sound effects.
+            </p>
+            <div class="img-medium-box ">
+                <video width="100%" controls="" class="img-big">
+                    <source src="Hoverbike 2024-01-23 15-34-11 - Trim(1).mp4" type="video/mp4">
+                </video>
+            </div>
+            
+        </div>
+    </div>
+    
+    <!-- footer contact section -->
+    <div id="contactSection"></div>
+    
+    <div id="imagePopup" class="imagePopup">
+        <img id="popupImage" src="" alt="">
+    </div>
+    
+</body>
+
+</html>
