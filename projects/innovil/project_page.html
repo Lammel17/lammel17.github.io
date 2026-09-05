@@ -56,16 +56,16 @@
             </div>
 
             <p class="testJustify"> 
-                Innovil is a recreation of a souls-like boss fight I have build completely fromm grounds up.
-                It is the project I was the most passioned for at the time, trying to do all parts myself to build a satisfying fight.
-                I have always been a great fan of the souls titles from Framsoftware. 
-                With that inspiration I developed an idea for a boss monster, even long before I started the development.
+                Innovil is a Souls-like boss fight that I developed entirely from the ground up.
+                It was the project I was most passionate about at the time, as I wanted to take responsibility for every aspect of the development and create a complete, satisfying boss fight on my own.
+                I have always been a huge fan of the Souls games by FromSoftware, and they served as a major source of inspiration for this project.
+                The concept for the boss itself had been in my mind for a long time before I finally started developing the game.
             </p>
             <p class="testJustify">
                 Click on this <a
                     href="https://github.com/Lammel17/Innovil-A-SoulsLike-Boss-Fight-Full-Game" target="_blank">GitHub</a> 
-                    link to visit the github release page, where you can find the download to the game. Extract the folder, and execute the .exe file. 
-                    The game is playable with an Xbox controller or when opened via Steam using the controller button mapping.
+                    link to visit the GitHub release page, where you can download the game. Extract the folder and execute the .exe file.
+                    The game is playable with an Xbox controller or through Steam using its controller button mapping.
             </p>
             <div class="leftVerticalLineThick">
                 <div class="image-border img-square-box">
@@ -80,28 +80,29 @@
 
             <h4 class="textAlignLeft">Planning the Project</h4>
             <p class="testJustify"> 
-                Before I started with anything, I made a plan for each point in the process of developing this bossfight.
-                Those include:
+                Before starting development, I created a plan covering the major steps required to build the boss fight from the ground up.
+                This included:
             </p>
             <p>
-                • define the idea and concept and mechanics<br>
-                • code and implement the movement and camera behaviour<br>
-                • character model + rigging + animations<br>
-                • boss model + rigging + animations<br>
-                • import the models and code the character abilities<br>
-                • create stats and HUD<br>
-                • code the boss behaviour<br>
-                • implement a hit- and hurtbox system<br>
-                • create assets for particles and environment<br>
-                • add soundeffects<br>
-                • build the environment and lighting<br>
+                • defining the concept, mechanics, and overall idea<br>
+                • programming and implementing the movement and camera behaviour<br>
+                • creating the character model, rig, and animations<br>
+                • creating the boss model, rig, and animations<br>
+                • importing the models and implementing the character abilities<br>
+                • creating the stats and HUD<br>
+                • programming the boss behaviour<br>
+                • implementing a hitbox and hurtbox system<br>
+                • creating assets for particles and the environment<br>
+                • adding sound effects<br>
+                • building the environment and lighting<br>
                 
             </p>
 
             <h4 class="textAlignLeft">The Idea</h4>
             <p class="testJustify"> 
-                I took the design of a mechanical beast I made in school, it was an great fit, also desiding the setting for me.
-                For the player character I decided for him to be mechanical too, it would remove the part of weightpainting the body in blender, speeding up the process, same goes for the boss monster "Innovil".
+                The design of the boss originated from a mechanical beast I had created in school. Its appearance was a perfect fit for the project and helped define the overall setting.
+                I decided to make the player character mechanical as well. This allowed me to avoid weight painting the body in Blender, which significantly simplified the character setup and sped up development.
+                The same approach was used for the boss, Innovil.
 
             </p>
             
@@ -116,14 +117,15 @@
 
             <h4 class="textAlignLeft">3D Models, Rigging and Animations</h4>
             <p class="testJustify"> 
-                Blender grows to ones hearth very fast, I was able to quickly model the player character and rig it easily.
-                The Boss monster however had a unique body shape, but just after a few tutorials, I understood what to do and how to rig it best.
-                The long arms are made of more than 20 pieces, so Inverse Kinematics were very necessary for the rig. 
+                Blender quickly became one of the most enjoyable parts of the project. I was able to model and rig the player character relatively quickly.
+                The boss, however, presented a greater challenge due to its unusual body shape. After studying a few tutorials, I was able to develop a suitable rig and apply it to the model.
+                Its long arms consist of more than 20 individual pieces, making Inverse Kinematics essential for achieving natural and controllable movement.
 
             </p>
             <p class="testJustify"> 
-                Each model has around 40 animations, which I made in blender. some animations are just as short as a stagger, some a whole attack combo. 
-                In the end I could finish both animation sets in a few weeks.
+                Each character has around 40 animations, all of which I created in Blender.
+                These range from short reactions, such as staggers, to complete attack combos.
+                Despite the amount of animation work involved, I was able to complete both animation sets within a few weeks.
             </p>
             <div class="leftVerticalLineThick">
                 <div class="image-border img-square-box">
@@ -137,43 +139,44 @@
             </div>
             <h4 class="textAlignLeft">Movement and Features</h4>
             <p class="testJustify"> 
-                I planned controls to be oriented on the Dark Souls franchise, a third person view on a character, able to walk 360°, but without jumping.
-                The features were coded in C# as usual for Unity.
-                The player can do the following actions: <br>
+                I designed the controls around the movement and combat conventions of the Dark Souls franchise.
+                The game uses a third-person perspective, allowing the player to move freely in 360° while deliberately omitting a jump mechanic.
+                All gameplay features were programmed in C# using Unity.
+                The player can perform the following actions:<br>
             </p>
             <p>
-                • camera lock on and off<br>
+                • camera lock-on and off<br>
                 • running<br>
                 • evading<br>
                 • light attack combo (depending on previous input)<br>
                 • heavy attack combo (depending on previous input)<br>
-                • blocking with shield<br>
-                • shoot projectile (6 slots)<br>
-                • reload projectiles (3 per reload)<br>
-                • slow or fast heal (depending on button hold duration)<br>
+                • blocking with a shield<br>
+                • shooting projectiles (6 slots)<br>
+                • reloading projectiles (3 per reload)<br>
+                • slow or fast healing (depending on button hold duration)<br>
                 
             </p>
             <p class="testJustify"> 
-                Coding the character movement and moveset is the most enjoyable aspect in creating a game, at least for me.
-                I would call this my first big project, while working on it I learned a lot what to do and what not.
-                But there was also I deadline to hit, which means, I could not learn everything I wanted, and hat to cut corners. 
-                One of those corners I cutted was unfortunately the Animator of Unity. 
-                It was a mess, but a functionable one at least. I have learned for the future, that it is more organized, when handling the transitions via code, instead the animator transitions.
-
+                Programming the character movement and moveset was my favourite part of the development process.
+                I consider Innovil my first major game project, and it taught me a great deal about both effective development practices and the mistakes to avoid.
+                However, the project also came with a fixed deadline, which meant I could not explore every idea as deeply as I would have liked and had to make compromises.
+                One of those compromises was Unity's Animator.
+                The resulting setup became difficult to manage, but remained functional enough to complete the project.
+                This experience taught me that, for future projects, I want to handle more of the animation state transitions through code rather than relying heavily on Animator transitions.
             </p>
 
             <h4 class="textAlignLeft">The Impact Shield Feature</h4>
             <p class="testJustify"> 
-                When the player holds the shiled up, a bar appears going down until empty.
-                this bar is the impact bar, it determines how well the player blocks an attack.
-                The higher the bar is when the attack hits the shield, the more energy can be absorbed of the impact, adding up with the enery loss of the block itself.
-                When blocking perfectly timed, the player gains the max amount of energy possible.
-                When the bar is completely empty, no extra energy is gained.
-                A blue flash appears instead of a red one, when the engery change is positive.
+                When the player raises the shield, an impact bar appears and gradually depletes.
+                This bar determines how effectively an incoming attack can be blocked.
+                The more energy remaining in the impact bar when an attack hits, the more of the impact can be absorbed, in addition to the energy normally consumed by blocking.
+                A perfectly timed block allows the player to gain the maximum amount of energy.
+                If the impact bar is completely depleted, no additional energy can be gained.
+                When the resulting energy change is positive, a blue flash appears instead of the usual red one.
                 
             </p>
             <p>
-                When the extra enery bar is completely filled through the impact absorbtion, the player is bale to reload the projectiles.
+                Once the additional energy bar has been completely filled through impact absorption, the player can use that energy to reload their projectiles.
             </p>
             <div class="leftVerticalLineThick">
                 <div class="image-border img-medium-box">
@@ -184,8 +187,7 @@
             </div>
             <h4 class="textAlignLeft">Gameplay</h4>
             <p class="testJustify"> 
-                Here is a whole playthrough of the Boss fight. 
-                It shows all the features, including the impact absorbtion. 
+                This video shows a complete playthrough of the boss fight and demonstrates all of the implemented gameplay features.
             </p>
             <div class="img-medium-box ">
                 <video width="100%" controls="" class="img-big">
