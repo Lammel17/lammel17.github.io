@@ -63,68 +63,133 @@
             </p>
             <p class="testJustify">
                 Click on this <a
-                    href="https://drive.google.com/file/d/1a-FtmKCo2CKtyKR5FQ7Y5_9q0k2w87tG/view?usp=drive_link" target="_blank">GitHub</a> 
+                    href="https://github.com/Lammel17/Innovil-A-SoulsLike-Boss-Fight-Full-Game" target="_blank">GitHub</a> 
                     link to visit the github release page, where you can find the download to the game. Extract the folder, and execute the .exe file. 
                     The game is playable with an Xbox controller or when opened via Steam using the controller button mapping.
             </p>
-            
-            <h4 class="textAlignLeft">Development Process</h4>
-            <p class="testJustify"> 
-                Hoverbike is a solo-developed short game created in Unity. The idea was to control a hoverbike and explore an open area with ancient ruins.
-                I started by coding the behaviour of the hoverbike and then worked on the portal feature, which turned out really well.
-                Then I modeled the hoverbike in Blender and built the environment using <a href="https://assetstore.unity.com/packages/3d/environments/low-poly-nature-bundle-223104" target="_blank">LMHPOLY</a> assets.
-
-            </p>
-            
             <div class="leftVerticalLineThick">
-                <div class="image-border img-medium-box">
-                    <video width="100%" controls="">
-                        <source src="Aufzeichnung 2023-11-27 190352.mp4" type="video/mp4">
-                    </video>
-                    <video width="100%" controls="">
-                        <source src="Aufzeichnung 2023-12-27 162247.mp4" type="video/mp4">
-                    </video>
+                <div class="image-border img-square-box">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2024-07-09 132533.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2024-07-09 133435.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2024-07-09 210854.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
                 </div>
             </div>
 
-            <h4 class="textAlignLeft">The Gate</h4>
+            <h4 class="textAlignLeft">Planning the Project</h4>
             <p class="testJustify"> 
-                When designing the portal feature, I encountered a problem. 
-                While I found inspiration for solving the seamless transition by having a plane that renders an image of the view relative to the other portal, 
-                I still had to solve the problem of what happens to the surrounding environment when viewed from a third-person perspective. 
-                Because the surroundings would change instantly when viewed from outside the hoverbike's point of view, I had to force the camera's position to only show the portal. 
-                This behaviour can be seen in the video at the end.
+                Before I started with anything, I made a plan for each point in the process of developing this bossfight.
+                Those include:
+            </p>
+            <p>
+                • define the idea and concept and mechanics<br>
+                • code and implement the movement and camera behaviour<br>
+                • character model + rigging + animations<br>
+                • boss model + rigging + animations<br>
+                • import the models and code the character abilities<br>
+                • create stats and HUD<br>
+                • code the boss behaviour<br>
+                • implement a hit- and hurtbox system<br>
+                • create assets for particles and environment<br>
+                • add soundeffects<br>
+                • build the environment and lighting<br>
                 
             </p>
+
+            <h4 class="textAlignLeft">The Idea</h4>
+            <p class="testJustify"> 
+                I took the design of a mechanical beast I made in school, it was an great fit, also desiding the setting for me.
+                For the player character I decided for him to be mechanical too, it would remove the part of weightpainting the body in blender, speeding up the process, same goes for the boss monster "Innovil".
+
+            </p>
+            
             <div class="leftVerticalLineThick">
                 <div class="image-border img-medium-box">
-                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 153023.png" alt="Image"
+                    <img class="popupImage clickable img-medium hoverable" src="stuff try.jpg" alt="Image"
                     onclick="openPopup(this)" loading="lazy">
-                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 153036.png" alt="Image"
+                    <img class="popupImage clickable img-medium hoverable" src="WhatsApp Image 2026-09-04 at 20.56.21.jpeg" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                </div>
+            </div>
+
+            <h4 class="textAlignLeft">3D Models, Rigging and Animations</h4>
+            <p class="testJustify"> 
+                Blender grows to ones hearth very fast, I was able to quickly model the player character and rig it easily.
+                The Boss monster however had a unique body shape, but just after a few tutorials, I understood what to do and how to rig it best.
+                The long arms are made of more than 20 pieces, so Inverse Kinematics were very necessary for the rig. 
+
+            </p>
+            <p class="testJustify"> 
+                Each model has around 40 animations, which I made in blender. some animations are just as short as a stagger, some a whole attack combo. 
+                In the end I could finish both animation sets in a few weeks.
+            </p>
+            <div class="leftVerticalLineThick">
+                <div class="image-border img-square-box">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2024-03-28 124605.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2024-07-09 132228.png" alt="Image"
+                    onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2024-07-09 132100.png" alt="Image"
                     onclick="openPopup(this)" loading="lazy">
                 </div>
             </div>
             <h4 class="textAlignLeft">Movement and Features</h4>
             <p class="testJustify"> 
-                The player can move freely in 360°, accelerate, brake, turn on the spot, or use nitro.
-                Nitro comes in three stages: red, yellow, and blue. Using nitro itself is not faster than normal speed, but when it is stacked by timing each use correctly, the next nitro input increases speed, up to blue nitro.
+                I planned controls to be oriented on the Dark Souls franchise, a third person view on a character, able to walk 360°, but without jumping.
+                The features were coded in C# as usual for Unity.
+                The player can do the following actions: <br>
+            </p>
+            <p>
+                • camera lock on and off<br>
+                • running<br>
+                • evading<br>
+                • light attack combo (depending on previous input)<br>
+                • heavy attack combo (depending on previous input)<br>
+                • blocking with shield<br>
+                • shoot projectile (6 slots)<br>
+                • reload projectiles (3 per reload)<br>
+                • slow or fast heal (depending on button hold duration)<br>
                 
+            </p>
+            <p class="testJustify"> 
+                Coding the character movement and moveset is the most enjoyable aspect in creating a game, at least for me.
+                I would call this my first big project, while working on it I learned a lot what to do and what not.
+                But there was also I deadline to hit, which means, I could not learn everything I wanted, and hat to cut corners. 
+                One of those corners I cutted was unfortunately the Animator of Unity. 
+                It was a mess, but a functionable one at least. I have learned for the future, that it is more organized, when handling the transitions via code, instead the animator transitions.
+
+            </p>
+
+            <h4 class="textAlignLeft">The Impact Shield Feature</h4>
+            <p class="testJustify"> 
+                When the player holds the shiled up, a bar appears going down until empty.
+                this bar is the impact bar, it determines how well the player blocks an attack.
+                The higher the bar is when the attack hits the shield, the more energy can be absorbed of the impact, adding up with the enery loss of the block itself.
+                When blocking perfectly timed, the player gains the max amount of energy possible.
+                When the bar is completely empty, no extra energy is gained.
+                A blue flash appears instead of a red one, when the engery change is positive.
+                
+            </p>
+            <p>
+                When the extra enery bar is completely filled through the impact absorbtion, the player is bale to reload the projectiles.
             </p>
             <div class="leftVerticalLineThick">
                 <div class="image-border img-medium-box">
-                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 152712.png" alt="Image"
+                    <img class="popupImage clickable img-big hoverable" src="Screenshot 2025-02-19 190738 1.png" alt="Image"
                     onclick="openPopup(this)" loading="lazy">
-                    <img class="popupImage clickable img-medium hoverable" src="Screenshot 2024-01-23 152807.png" alt="Image"
-                    onclick="openPopup(this)" loading="lazy">
+
                 </div>
             </div>
             <h4 class="textAlignLeft">Gameplay</h4>
             <p class="testJustify"> 
-                This video shows a short part of the second and third world, with sound effects.
+                Here is a whole playthrough of the Boss fight. 
+                It shows all the features, including the impact absorbtion. 
             </p>
             <div class="img-medium-box ">
                 <video width="100%" controls="" class="img-big">
-                    <source src="Hoverbike 2024-01-23 15-34-11 - Trim(1).mp4" type="video/mp4">
+                    <source src="Innovil, Soulslike Full Play(1).mp4" type="video/mp4">
                 </video>
             </div>
             

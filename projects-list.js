@@ -9,13 +9,13 @@ export const favouriteProjects = [
         page: "/projects/cube_souls/project_page.html"
     },
 
-    {
-        name: "Innovil: N3DS Port",
+        {
+        name: "Innovil: A Souls-Like Boss Fight (Unity)",
         category: "Game Development",
         categoryClass: "game-dev",
-        description: "This is a passion project in which I attempted to port Innovil to the Nintendo 3DS. I was able to port the game with all of its functionality, but with reduced visual quality.",
-        image: "/projects/3ds_innovil/CoverImage.png",
-        page: "/projects/3ds_innovil/project_page.html"
+        description: "A fully functional Souls-like boss fight where the player battles a mechanical beast. The design, models, animations, and code were all created by me.",
+        image: "/projects/innovil/CoverImage.png",
+        page: "/projects/innovil/project_page.html"
     },
     {
         name: "Hoverbike (Unity)",
