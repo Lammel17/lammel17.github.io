@@ -88,7 +88,7 @@ export const favouriteProjects = [
     },
 
     {
-        name: "Foot Placement Code",
+        name: "Procedural Foot Placement Code",
         category: "Coding",
         categoryClass: "code",
         description: "To place the feet and correctly angle the knees on uneven terrain in games, I created a script as my own attempt to solve this problem.",
@@ -166,7 +166,7 @@ export const allProjects = [
     },
 
     {
-        name: "Foot Placement Code",
+        name: "Procedural Foot Placement Code",
         category: "Coding",
         categoryClass: "code",
         description: "To place the feet and correctly angle the knees on uneven terrain in games, I created a script as my own attempt to solve this problem.",

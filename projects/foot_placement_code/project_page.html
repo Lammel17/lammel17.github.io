@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Navigation Script -->
+    <script type="module" src="/functions.js"> </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site | Lukas Müller</title>
+    <meta name="description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta name="author" content="Lukas Müller">
+
+    <!-- Embed page for social media posts -->
+    <meta property="og:description"
+        content="Portfolio of Lukas Müller, showcasing game development, programming, 3D modelling and digital art.">
+    <meta property="og:title" content="Portfolio Site | Lukas Müller">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lammel17.github.io/index.html">
+    <meta property="og:image" content="https://lammel17.github.io/index.html/img/preview.png">
+    <meta property=​"og:​site_name" content=​"Portfolio_Site_|_Lukas_Müller">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/img/faviconNew.png">
+
+    <!-- Page Style -->
+    <link rel="stylesheet" type="text/css" href="/style.css?version=1">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <div id="navigation"></div>
+
+    <!-- Header with Full-Size Image -->
+    <div class="small-TopBackground-image" style="background-image: url('../../img/background/header-bg.jpg');">
+        <div class="coverDivFull">
+            <!-- <img class="coverArtFull" src="../../img/image-logo.png" alt="Cover Image" height="512" width="512"></img> -->
+        </div>
+        <div class="mainTextField">
+            <div class="projectPage-Category category-code"> Coding </div>
+
+        </div>
+    </div>
+
+    <!-- Description Section -->
+    <div class="descriptionDiv">
+        <div class="mainTextField">
+            <p class="date"><i>2023</i></p>
+            <!-- Section -->
+            <h2 class="projectMainHeader textAlignLeft">Procedural Foot Placement Code </h2>
+            <p class="project-tags">Tags: coding, c#, procedural-animation, unity</p>
+
+            <div class="img-medium-box">
+                <img class="popupImage clickable image-border img-big" src="CoverImage.png" alt="Image" loading="lazy">
+            </div>
+
+            <p class="testJustify">
+                This procedural foot placement code is my own attempt to solve the problem of placing the feet of a
+                humanoid character correctly on uneven terrain.
+                I am aware that there are different approaches to this problem, but I wanted to develop my own solution
+                and challenge myself to think through the problem from the ground up.
+
+            </p>
+
+            <p class="testJustify">
+                Click on this <a href="FootPlacing.cs" download>DOWNLOAD</a> button to get the C# file.
+                The files in the ZIP contain the following small programs. The free program Processing is required
+                to run them:
+            </p>
+
+            <h4 class="textAlignLeft">The Final Result</h4>
+
+            <!-- Full-Size Video -->
+            <div class="img-medium-box">
+                <video width="100%" controls="">
+                    <source
+                        src="Bachelor-Project - Testscene - Windows, Mac, Linux - Unity 6.2 (6000.2.10F1)   Dx11  2026-09-05 21-26-58.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+
+            <h4 class="textAlignLeft">My Approach</h4>
+            <p class="testJustify"> Instead of relying on information from the animation, I wanted the system to
+                determine the required foot placement from the character's current state and its environment.
+                The approach is divided into four main parts.
+            </p>
+
+            <p> • predictive terrain sampling based on foot movement<br> 
+                • continuous foot-ground contact estimation<br>
+                • root height adjustment based on terrain and leg constraints<br> 
+                • analytical two-bone inverse kinematics<br>
+            </p>
+
+            <h4 class="textAlignLeft">Foot Placement Height</h4>
+            <p class="testJustify"> A downward raycast directly below the foot is sufficient for flat or slowly changing
+                terrain, but it can react too late when the character moves onto a higher surface.
+                To anticipate upcoming terrain, the raycast is shifted in the direction of the foot's movement.
+                The amount of this offset is based on the current movement of the foot and is reduced as the foot
+                approaches a planted state.
+                This allows the system to detect a step before the foot reaches it and use the result as the target for
+                the foot.
+            </p>
+
+            <h4 class="textAlignLeft">Foot Grounding</h4>
+            <p class="testJustify"> The detected ground should not always immediately influence the foot, since a foot
+                that is currently moving through the air should remain largely controlled by the animation.
+                I therefore estimate the degree of contact from the foot's current height and orientation relative to
+                its original state. These measurements produce a continuous grounding weight, which determines how
+                strongly the foot transitions toward the detected ground position. 
+            </p>
+            
+                <h4 class="textAlignLeft">Pelvis Height Correction</h4>
+            <p class="testJustify"> Adjusting the feet alone is not sufficient when the difference in terrain height
+                becomes too large.
+                A higher step can force the leg into an unnatural configuration or bring the foot too close to the
+                pelvis. The system therefore evaluates the relative ground heights and the available distance between
+                the pelvis and the feet. When necessary, the character's root is raised to provide a more plausible leg
+                configuration, while the correction is smoothed over time. 
+            </p>
+            
+                <h4 class="textAlignLeft">Leg Inverse Kinematics</h4>
+            <p class="testJustify"> Once the target position of each foot has been determined, the leg needs to be
+                reconstructed around it.
+                Since the leg consists of two main segments, the thigh and shin can be treated as two sides of a
+                triangle connecting the pelvis and foot. Using the lengths of these segments and the distance to the
+                target foot position, the required knee angle can be calculated directly. The resulting rotations are
+                then applied to the thigh and shin to reach the target without using a general-purpose IK solver. 
+            </p>
+
+
+
+        </div>
+    </div>
+
+    <!-- footer contact section -->
+    <div id="contactSection"></div>
+
+    <div id="imagePopup" class="imagePopup">
+        <img id="popupImage" src="" alt="">
+    </div>
+
+</body>
+
+</html>
