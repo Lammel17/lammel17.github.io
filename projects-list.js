@@ -224,8 +224,8 @@ export const allProjects = [
         category: "Film-Audio",
         categoryClass: "film-audio",
         description: "With this project, I challenged myself to give a Dark Souls cinematic a new sound design. It was particularly interesting as a person with hearing impairment.",
-        image: "/projects/audio_design_challenge/CoverImage.png",
-        page: "/projects/audio_design_challenge/project_page.html"
+        image: "/projects/sound_design_challenge/CoverImage.png",
+        page: "/projects/sound_design_challenge/project_page.html"
     },
 
     {
