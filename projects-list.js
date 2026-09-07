@@ -148,23 +148,14 @@ export const allProjects = [
     },
 
     {
-        name: "Lucky Tower Ultimate (Internship)",
-        category: "Game Development Internship",
-        categoryClass: "none",
-        description: "During my practical semester, I worked for six months at Studio Seufz in Stuttgart, Germany. The experience gave me a lot of insight into the game development industry.",
-        image: "/projects/lucky_tower/CoverImage.png",
-        page: "/projects/lucky_tower/project_page.html"
-    },
-
-    {
-        name: "Weapon Collection",
+        name: "Weapon Concept Collection",
         category: "Digital Art",
         categoryClass: "artwork",
         description: "These weapons are a homage to the game Bloodborne, which has an amazing collection of weapons. This is my own attempt to expand that collection.",
         image: "/projects/weapon_collection/CoverImage.png",
         page: "/projects/weapon_collection/project_page.html"
     },
-
+    
     {
         name: "Procedural Foot Placement Code",
         category: "Coding",
@@ -172,6 +163,15 @@ export const allProjects = [
         description: "To place the feet and correctly angle the knees on uneven terrain in games, I created a script as my own attempt to solve this problem.",
         image: "/projects/foot_placement_code/CoverImage.png",
         page: "/projects/foot_placement_code/project_page.html"
+    },
+    
+    {
+        name: "Lucky Tower Ultimate (Internship)",
+        category: "Game Development Internship",
+        categoryClass: "none",
+        description: "During my practical semester, I worked for six months at Studio Seufz in Stuttgart, Germany. The experience gave me a lot of insight into the game development industry.",
+        image: "/projects/lucky_tower/CoverImage.png",
+        page: "/projects/lucky_tower/project_page.html"
     },
 
     {
@@ -302,7 +302,7 @@ export const allProjects = [
 
     {
         name: "Nite Prime Creations",
-        category: "Digital Artworks",
+        category: "Digital Art",
         categoryClass: "artwork",
         description: "Nite Prime (NPC) has been my artist name since school. I have been a digital artist for most of my life, which inspired me to study Media Design at RWU.",
         image: "/projects/nite_prime/CoverImage.png",

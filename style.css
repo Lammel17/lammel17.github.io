@@ -319,6 +319,7 @@ h4 a:hover {
 
 .project-tags{
     color: rgb(96, 96, 96);
+    line-height: 1em;
 }
 
 .image-border {
