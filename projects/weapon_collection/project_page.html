@@ -38,7 +38,7 @@
             <!-- <img class="coverArtFull" src="../../img/image-logo.png" alt="Cover Image" height="512" width="512"></img> -->
         </div>
         <div class="mainTextField">
-            <div class="projectPage-Category category-artwork"> Coding </div>
+            <div class="projectPage-Category category-artwork"> Digital Art </div>
 
         </div>
     </div>
@@ -56,78 +56,51 @@
             </div>
 
             <p class="testJustify">
-                This procedural foot placement code is my own attempt to solve the problem of placing the feet of a
-                humanoid character correctly on uneven terrain.
-                I am aware that there are different approaches to this problem, but I wanted to develop my own solution
-                and challenge myself to think through the problem from the ground up.
+                Anyone who has played Bloodborne will know how fascinating its trick weapons are.
+                I think their appeal comes from the plausible designs, where a single weapon can be used in two distinct forms or ways.
 
             </p>
 
             <p class="testJustify">
-                Click on this <a href="FootPlacing.cs" download>DOWNLOAD</a> button to get the C# file.
-                The files in the ZIP contain the following small programs. The free program Processing is required
-                to run them:
+                Between the thorughs of what game I might develop one day and what I could draw next, I found myself coming up with some interesting weapon designs.
+                The sketches are not particularly polished, but they still capture the ideas and demonstrate some of the skills I have developed.
+                I therefore wanted to include them in my portfolio.
             </p>
 
-            <h4 class="textAlignLeft">The Final Result</h4>
-
-            <!-- Full-Size Video -->
-            <div class="img-medium-box">
-                <video width="100%" controls="">
-                    <source
-                        src="Bachelor-Project - Testscene - Windows, Mac, Linux - Unity 6.2 (6000.2.10F1)   Dx11  2026-09-05 21-26-58.mp4"
-                        type="video/mp4">
-                </video>
+            <div class="leftVerticalLineThick">
+                <div class="image-border img-square-box">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2026-01-03 150305.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014737.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014919.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2026-01-03 162152.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014821.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014829.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014842.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014854.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014907.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2026-01-03 162259.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014721.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014728.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2026-09-07 185439.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2026-09-07 185451.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                    <img class="popupImage clickable img-square hoverable" src="Screenshot 2025-09-06 014746.png"
+                        alt="Image" onclick="openPopup(this)" loading="lazy">
+                </div>
             </div>
-
-            <h4 class="textAlignLeft">My Approach</h4>
-            <p class="testJustify"> Instead of relying on information from the animation, I wanted the system to
-                determine the required foot placement from the character's current state and its environment.
-                The approach is divided into four main parts.
-            </p>
-
-            <p> • predictive terrain sampling based on foot movement<br> 
-                • continuous foot-ground contact estimation<br>
-                • root height adjustment based on terrain and leg constraints<br> 
-                • analytical two-bone inverse kinematics<br>
-            </p>
-
-            <h4 class="textAlignLeft">Foot Placement Height</h4>
-            <p class="testJustify"> A downward raycast directly below the foot is sufficient for flat or slowly changing
-                terrain, but it can react too late when the character moves onto a higher surface.
-                To anticipate upcoming terrain, the raycast is shifted in the direction of the foot's movement.
-                The amount of this offset is based on the current movement of the foot and is reduced as the foot
-                approaches a planted state.
-                This allows the system to detect a step before the foot reaches it and use the result as the target for
-                the foot.
-            </p>
-
-            <h4 class="textAlignLeft">Foot Grounding</h4>
-            <p class="testJustify"> The detected ground should not always immediately influence the foot, since a foot
-                that is currently moving through the air should remain largely controlled by the animation.
-                I therefore estimate the degree of contact from the foot's current height and orientation relative to
-                its original state. These measurements produce a continuous grounding weight, which determines how
-                strongly the foot transitions toward the detected ground position. 
-            </p>
-            
-                <h4 class="textAlignLeft">Pelvis Height Correction</h4>
-            <p class="testJustify"> Adjusting the feet alone is not sufficient when the difference in terrain height
-                becomes too large.
-                A higher step can force the leg into an unnatural configuration or bring the foot too close to the
-                pelvis. The system therefore evaluates the relative ground heights and the available distance between
-                the pelvis and the feet. When necessary, the character's root is raised to provide a more plausible leg
-                configuration, while the correction is smoothed over time. 
-            </p>
-            
-                <h4 class="textAlignLeft">Leg Inverse Kinematics</h4>
-            <p class="testJustify"> Once the target position of each foot has been determined, the leg needs to be
-                reconstructed around it.
-                Since the leg consists of two main segments, the thigh and shin can be treated as two sides of a
-                triangle connecting the pelvis and foot. Using the lengths of these segments and the distance to the
-                target foot position, the required knee angle can be calculated directly. The resulting rotations are
-                then applied to the thigh and shin to reach the target without using a general-purpose IK solver. 
-            </p>
-
 
 
         </div>

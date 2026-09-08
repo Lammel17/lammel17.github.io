@@ -211,6 +211,15 @@ export const allProjects = [
     },
 
     {
+        name: "Animal Crossovers",
+        category: "Digital Art",
+        categoryClass: "artwork",
+        description: "Here I combined animal features to form a new creature. There are 18 animal crossovers in this collection.",
+        image: "/projects/animal_crossovers/CoverImage.png",
+        page: "/projects/animal_crossovers/project_page.html"
+    },
+
+    {
         name: "VR-Puzzle Game",
         category: "Game Development",
         categoryClass: "game-dev",
