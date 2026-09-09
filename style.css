@@ -28,7 +28,7 @@ p {
     text-align: justify;
     padding-top: 5px;
     padding-bottom: 5px;
-    line-height: 25px;
+    line-height: 24px;
     /*font-family: ;*/
 }
 
@@ -173,7 +173,7 @@ h4 a:hover {
 }
 
 .mainTextField {
-    width: min(850px, 95%);
+    width: min(750px, 95%);
     justify-self: center;
     padding: auto;
 }
