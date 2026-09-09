@@ -95,6 +95,7 @@ h4 a:hover {
 .coverArt {
     color: white;
     text-align: center;
+    height: 210px;
     max-height: 300px;
     max-width:  100%;
     display: block;
@@ -281,7 +282,7 @@ h4 a:hover {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position:relative;
     margin-bottom: 5px;
 }
 
@@ -678,6 +679,10 @@ h4 a:hover {
 
 }
 
+.hello{
+    margin-top: 20px;
+}
+
 
 
 
@@ -687,7 +692,7 @@ h4 a:hover {
 /*Top Nav bar--------------------------*/
 .topnav {
     overflow: hidden;
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(14, 62, 116);
     line-height: 30px;
 
 }
@@ -847,7 +852,7 @@ h4 a:hover {
     }
     
     .topnav {
-        background-color: rgb(12, 69, 123);
+        background-color: rgb(14, 62, 116);
     }
 
     
