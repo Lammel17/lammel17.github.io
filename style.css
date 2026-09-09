@@ -75,6 +75,14 @@ h4 a:hover {
     text-align: justify;
 }
 
+.threeDots{
+    text-align: center;
+    line-height: 3rem;
+    font-size: 2rem;
+    padding-bottom: 10px;
+    padding-top: 0px;
+}
+
 .rounded {
     border-radius: 50% 10%;
     -webkit-background-clip: padding-box;
@@ -362,7 +370,8 @@ h4 a:hover {
 }
 
 .leftVerticalLineThick {
-    border-left: medium solid #676767;
+    border-left: medium solid #3c3c3c;
+    border-right: medium solid #3c3c3c;
     margin-inline: 0px;
 }
 

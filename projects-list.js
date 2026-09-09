@@ -281,6 +281,15 @@ export const allProjects = [
         image: "/projects/coast_guard/CoverImage.png",
         page: "/projects/coast_guard/project_page.html"
     },
+    
+    {
+        name: "Java Coding Collection",
+        category: "Coding",
+        categoryClass: "code",
+        description: "When learning to code, it is useful to create multiple small projects that cover different concepts individually.",
+        image: "/projects/java_excercise/CoverImage.png",
+        page: "/projects/java_excercise/project_page.html"
+    },
 
     {
         name: "Lend A Hand",
@@ -298,15 +307,6 @@ export const allProjects = [
         description: "This short film explores the depressing pressure created by the feeling of monotony. I worked in a small team, where I helped with shooting and editing the film.",
         image: "/projects/monotony/CoverImage.png",
         page: "/projects/monotony/project_page.html"
-    },
-
-    {
-        name: "Java Coding Collection",
-        category: "Coding",
-        categoryClass: "code",
-        description: "When learning to code, it is useful to create multiple small projects that cover different concepts individually.",
-        image: "/projects/java_excercise/CoverImage.png",
-        page: "/projects/java_excercise/project_page.html"
     },
 
     {
