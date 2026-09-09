@@ -6,8 +6,8 @@ if (navigation) {
     navigation.innerHTML = `
         <div class="topnav" id="myTopnav">
             <a href="/index.html" class="rightVerticalLine">Main Page</a>
-            <a href="/My-Projects.html">All Projects</a>
-            <a href="/My-Art.html">All Artworks</a>
+            <a href="/My-Projects.html">Projects</a>
+            <a href="/My-Art.html">Artworks</a>
             <a href="/About-Me.html">About Me</a>
             <a href="/Contact.html">Contact</a>
             <a href="#" class="icon leftVerticalLine" id="menuButton">

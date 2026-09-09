@@ -21,14 +21,14 @@ a {
 /*project pages--------------------------*/
 p {
     color: rgb(36,36,38);
-    font-size: 1.0rem;
+    font-size: 0.9rem;
     font-weight: normal;
     margin-bottom: 0px;
     margin-top: 0px;
     text-align: justify;
     padding-top: 5px;
     padding-bottom: 5px;
-    line-height: 24px;
+    line-height: 23px;
     /*font-family: ;*/
 }
 
@@ -106,14 +106,17 @@ h4 a:hover {
 }
 
 .coverArtFull {
-    max-height: 40%;
     width: auto;
+    max-height: 40%;
+    max-width: 80%;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
+    
+
 }
 
 .coverDiv {
@@ -283,7 +286,7 @@ h4 a:hover {
 }
 
 .small-TopBackground-image {
-    height: 50px;
+    height: 40px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -309,19 +312,19 @@ h4 a:hover {
 
 /*project pages--------------------------*/
 .projectPage-Category{
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
-    line-height: 24px;
+    line-height: 21px;
     color: #d9d9d9;
     background-color: #545454;
     border-radius: 20px 20px 0px 0px;
     width: 200px;
-    margin-top: 26px;
+    margin-top: 19px;
     margin-left: 20px;
 }
 
 .projectMainHeader{
-    margin-top: 0;
+    margin-top: -0px;
     margin-bottom: 0px;
 }
 
@@ -337,6 +340,7 @@ h4 a:hover {
 
 .img-big {
     max-height: 450px;
+    max-width: 88vw;
     margin-top: 30px;
     margin-bottom: 20px;
     display: block;
@@ -489,9 +493,9 @@ h4 a:hover {
 }
 
 .category {
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: bold;
-    line-height: 26px;
+    line-height: 21px;
     color: #d9d9d9;
     background-color: #545454;
     border-radius: 20px 20px 0px 0px;
@@ -537,7 +541,7 @@ h4 a:hover {
     margin-right: 5%;
     margin-bottom: 5px;
     padding: auto;
-    font-size: 1.3em;
+    font-size: 1.2em;
     text-align: left;
     padding-top: 0px;
     padding-bottom: 0px;
@@ -557,7 +561,7 @@ h4 a:hover {
     margin-bottom: 15px;
     margin-top: px;
 
-    font-size: 1em;
+    font-size: 0.8em;
     line-height: 18px;
     padding: 0;
     text-align: left;
