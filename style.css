@@ -84,7 +84,7 @@ h4 a:hover {
 }
 
 .rounded {
-    border-radius: 50% 10%;
+    border-radius: 30% 0%;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -moz-background-clip: padding;
@@ -436,10 +436,10 @@ h4 a:hover {
 /*Project grid and Tiles--------------------------*/
 .gridProjects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(270px, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
     gap: clamp(5px, 0.5vw, 5px);
     justify-content: center;
-    width: min(1400px, 100%);
+    width: min(1200px, 100%);
     margin: 0 auto;
     padding-bottom: 15px;
     padding-inline: clamp(15px, 5vw, 60px);
@@ -578,10 +578,10 @@ h4 a:hover {
 
 .gridArtworks {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(275px, 40%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(260px, 40%), 1fr));
     gap: 15px clamp(0px, 0vw, 0px);
 
-    width: min(1300px, 100%);
+    width: min(1200px, 100%);
     margin: 0 auto;
     padding-inline: clamp(1px, 4vw, 60px);
     box-sizing: border-box;

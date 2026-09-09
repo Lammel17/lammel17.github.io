@@ -187,7 +187,7 @@ export const allProjects = [
         name: "Showreel",
         category: "Animation",
         categoryClass: "animation",
-        description: "This is my showreel, a collection of video clips from various projects up to 2024.",
+        description: "This is my showreel, a compilation of video clips from various projects up to 2024.",
         image: "/projects/showreel/CoverImage.png",
         page: "/projects/showreel/project_page.html"
     },
