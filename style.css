@@ -277,7 +277,7 @@ h4 a:hover {
 }
 
 .medium-TopBackground-image {
-    height: 200px;
+    height: 170px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -303,6 +303,16 @@ h4 a:hover {
     transform: translate(-50%, -50%);
     color: white;
     line-height: 0px;
+}
+
+.topLine{
+    border-top: thick solid #3c3c3c;
+    width: min(970px, 100%);
+    padding-top: 13px;
+    margin-inline: clamp(15px, 5vw, 60px);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-self: center;
 }
 
 
@@ -439,7 +449,7 @@ h4 a:hover {
     grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
     gap: clamp(5px, 0.5vw, 5px);
     justify-content: center;
-    width: min(1200px, 100%);
+    width: min(1100px, 100%);
     margin: 0 auto;
     padding-bottom: 15px;
     padding-inline: clamp(15px, 5vw, 60px);
