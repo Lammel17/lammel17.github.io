@@ -46,6 +46,9 @@ function createContactSection() {
                         </a>.
                     </i>
                 </p>
+                <p>
+                     © Lukas Müller · Portfolio
+                </p>
             </div>
         </div>
     `;
@@ -109,7 +112,7 @@ if (popup) {
 
 
 
-//favourite project and artworks-----------------------------------------------
+//project and artworks-----------------------------------------------
 import { favouriteProjects } from "./projects-list.js";
 import { favouriteArtworks } from "./artworks-list.js";
 import { allProjects } from "./projects-list.js";
