@@ -20,7 +20,6 @@ export const favouriteArtworks = [
 
 export const allArtworks = [
     "Ester.png",
-    "queela Kopie 4.png",
     "Evelius dark.png",
     "brush girls 4.png",
     "3 RWU 23.png",
@@ -48,6 +47,7 @@ export const allArtworks = [
     "item seller.png",
     "cami portrait2.png",
     "portrait flow.png",
+    "concept artt1.png",
     "face hisabik.png",
     "animals2.png",
     "robooot.png",
@@ -57,7 +57,6 @@ export const allArtworks = [
     "Fit4.png",
     "cat.png",
     "hand3.png",
-    "concept artt1.png",
     "fey.png",
     "hand stange.png",
     "taxas.png",
@@ -77,6 +76,7 @@ export const allArtworks = [
     "jojo 2.png",
     "randm.png",
     "peach saveb.png",
+    "queela Kopie 4.png",
     "haus.png",
     "asoka.png",
     "giant godness - Kopie.png",
