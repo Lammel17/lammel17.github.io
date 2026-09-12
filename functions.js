@@ -6,9 +6,9 @@ if (navigation) {
     navigation.innerHTML = `
         <div class="topnav" id="myTopnav">
 
-        <a href="/index.html" class="rightVerticalLine ">
+        <a href="/index.html" class=" rightVerticalLine ">
         <h4 class="homeLink ">
-        <img  src="img/faviconParal.png">Home</img>
+        <img  src="img/faviconPlain.png">Home</img>
         </h4>
         </a>
 
