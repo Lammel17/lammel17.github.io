@@ -8,7 +8,7 @@ if (navigation) {
 
             
         <a href="/index.html" class=" icon rightVerticalLine homeLink" id="menuButton">
-            <img src="img/faviconPlainSmall.png" alt="Menu Button">
+            <img src="/img/faviconPlainSmall.png" alt="Menu Button">
         </a>
         
         <div class="menuContainer">
