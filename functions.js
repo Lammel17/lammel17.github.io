@@ -13,7 +13,7 @@ if (navigation) {
         </a>
 
             <div class="menuContainer">
-                <a href="/index.html" class="icon leftVerticalLine" id="menuButton">
+                <a href="#" class="icon leftVerticalLine" id="menuButton">
                     <img src="/img/menu.png"
                     height="30"
                     width="30"
