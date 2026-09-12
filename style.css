@@ -703,19 +703,15 @@ h4 a:hover {
     text-align: center;
     text-decoration: none;
     font-size: 16px;
-    padding-inline: max(20px, 3%);
+
 }
 
 .topnav a:hover {
     background-color: rgb(8, 40, 74);;
 }
 .homeLink {
-    display: flex;
-    align-items: center;
-    gap: 0px;
-    min-width: 100px;
-    margin:0;
-    height: 100%;
+
+    width: min(50vw, 300px);
 }
 
 .topnav img {
@@ -733,7 +729,6 @@ h4 a:hover {
     float: right;
     position: relative;
     width: min(40vw, 300px);
-    min-width: 200px;
 }
 .menuContainer .icon {
     display: block;
@@ -748,9 +743,7 @@ h4 a:hover {
     top: 100%;
     background-color: rgb(14, 62, 116);
     z-index: 100;
-    width: min(40vw, 300px);
-    min-width: 300px;
-    
+    width: min(40vw, 300px);    
 }
 
 .menuContainer:hover .dropdownMenu {
