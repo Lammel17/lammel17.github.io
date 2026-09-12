@@ -52,7 +52,7 @@ function createContactSection() {
                     Tap the email address to copy it, or
                     <i>
                         <a href="/Contact.html">
-                            check out the contact page here.
+                            check out the contact page here
                         </a>.
                     </i>
                 </p>
