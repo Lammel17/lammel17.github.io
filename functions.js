@@ -6,10 +6,14 @@ if (navigation) {
     navigation.innerHTML = `
         <div class="topnav" id="myTopnav">
 
-            <a href="/index.html" class="rightVerticalLine">Main Page</a>
+        <a href="/index.html" class="rightVerticalLine ">
+        <h4 class="homeLink ">
+        <img  src="img/faviconParal.png">Home</img>
+        </h4>
+        </a>
 
             <div class="menuContainer">
-                <a href="#" class="icon leftVerticalLine" id="menuButton">
+                <a href="/index.html" class="icon leftVerticalLine" id="menuButton">
                     <img src="/img/menu.png"
                     height="30"
                     width="30"

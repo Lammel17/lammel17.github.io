@@ -709,7 +709,13 @@ h4 a:hover {
 .topnav a:hover {
     background-color: rgb(8, 40, 74);;
 }
-
+.homeLink {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 100px;
+    margin:0;
+}
 
 .topnav img {
     color: white;
@@ -725,6 +731,8 @@ h4 a:hover {
 .menuContainer {
     float: right;
     position: relative;
+    width: min(40vw, 300px);
+    min-width: 200px;
 }
 .menuContainer .icon {
     display: block;
