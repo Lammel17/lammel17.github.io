@@ -8,7 +8,7 @@ if (navigation) {
 
         <a href="/index.html" class=" rightVerticalLine ">
         <h4 class="homeLink ">
-        <img  src="img/faviconPlain.png">Home</img>
+        <img  src="img/faviconPlainSmall.png">Home</img>
         </h4>
         </a>
 
