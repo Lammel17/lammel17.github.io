@@ -711,7 +711,7 @@ h4 a:hover {
 }
 .homeLink {
 
-    width: min(50vw, 300px);
+    width: min(45vw, 300px);
 }
 
 .topnav img {
@@ -728,7 +728,7 @@ h4 a:hover {
 .menuContainer {
     float: right;
     position: relative;
-    width: min(40vw, 300px);
+    width: min(45vw, 300px);
 }
 .menuContainer .icon {
     display: block;
@@ -792,16 +792,16 @@ h4 a:hover {
 }
 
 .rightVerticalLine {
-    border-right: thin solid #b4adad;
+    border-right: medium solid #b4b4b4;
 }
 
 .leftVerticalLine {
-    border-left: thin solid #b4adad;
+    border-left: medium solid #b4b4b4;
 }
 
 
 .horizontalLine {
-    border-bottom: thick solid #b4adad;
+    border-bottom: thick solid #b4b4b4;
 }
 
 @media screen and (max-width: 1200px) {
@@ -844,6 +844,11 @@ h4 a:hover {
         flex: 100%;
         max-width: 100%;
         
+    }
+
+    .topLine{
+        border-top: medium solid #3c3c3c;
+
     }
 }
 
