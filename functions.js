@@ -1,25 +1,32 @@
 
-//create header-----------------------------------------------
+// create header
 const navigation = document.getElementById("navigation");
 
 if (navigation) {
     navigation.innerHTML = `
         <div class="topnav" id="myTopnav">
+
             <a href="/index.html" class="rightVerticalLine">Main Page</a>
-            <a href="/My-Projects.html">Projects</a>
-            <a href="/My-Art.html">Artworks</a>
-            <a href="/About-Me.html">About Me</a>
-            <a href="/Contact.html">Contact</a>
-            <a href="#" class="icon leftVerticalLine" id="menuButton">
-                <img src="/img/menu.png"
-                     height="30"
-                     width="30"
-                     alt="Menu Button">
-            </a>
+
+            <div class="menuContainer">
+                <a href="#" class="icon leftVerticalLine" id="menuButton">
+                    <img src="/img/menu.png"
+                    height="30"
+                    width="30"
+                    alt="Menu Button">
+                </a>
+
+                <div class="dropdownMenu">
+                    <a href="/index.html">Home</a>
+                    <a href="/My-Projects.html">Projects</a>
+                    <a href="/My-Art.html">Artworks</a>
+                    <a href="/About-Me.html">About Me</a>
+                    <a href="/Contact.html">Contact</a>
+                </div>
+            </div>
+
         </div>
     `;
-
-    document.getElementById("menuButton").addEventListener("click", myFunction);
 }
 
 
@@ -62,21 +69,6 @@ function createContactSection() {
 
 
 
-//unfold header-----------------------------------------------
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
-}
-
-const menuButton = document.querySelector(".topnav .icon");
-
-if (menuButton != null) {
-    menuButton.addEventListener("click", myFunction);
-}
 
 
 

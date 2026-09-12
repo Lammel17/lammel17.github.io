@@ -28,7 +28,7 @@ p {
     text-align: justify;
     padding-top: 5px;
     padding-bottom: 5px;
-    line-height: 23px;
+    line-height: 1.5;
     /*font-family: ;*/
 }
 
@@ -691,13 +691,12 @@ h4 a:hover {
 
 /*Top Nav bar--------------------------*/
 .topnav {
-    overflow: hidden;
+    overflow: visible;
     background-color: rgb(14, 62, 116);
     line-height: 30px;
-
 }
 
-.topnav a {
+.topnav > a {
     float: left;
     display: block;
     color: #f2f2f2;
@@ -711,9 +710,6 @@ h4 a:hover {
     background-color: rgb(8, 40, 74);;
 }
 
-.topnav .icon {
-    display: none;
-}
 
 .topnav img {
     color: white;
@@ -725,15 +721,56 @@ h4 a:hover {
     margin-right: auto;
     padding: 0px;
 }
-
-.topnav a:not(:first-child) {
+/* Hamburger menu */
+.menuContainer {
+    float: right;
+    position: relative;
+}
+.menuContainer .icon {
+    display: block;
+    float: none;
+    padding-inline: max(20px, 3%);
+}
+/* Dropdown */
+.dropdownMenu {
     display: none;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    background-color: rgb(14, 62, 116);
+    z-index: 100;
+    width: min(40vw, 300px);
+    min-width: 300px;
+    
 }
 
-.topnav a.icon {
-    float: right;
+.menuContainer:hover .dropdownMenu {
     display: block;
 }
+
+
+/* Dropdown links */
+.dropdownMenu a {
+    display: block;
+    float: none;
+    color: #f2f2f2;
+    text-align: left;
+    text-decoration: none;
+    padding: 5px 20px;
+}
+
+/* Clear floats */
+.topnav::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*
+.topnav a:not(:first-child) {
+    display: none;
+}*/
+
 
 .topnav.responsive {
     position: relative;
@@ -857,6 +894,11 @@ h4 a:hover {
 
     
 }
+
+
+
+
+
 
 
 
