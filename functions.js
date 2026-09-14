@@ -7,16 +7,13 @@ if (navigation) {
         <div class="topnav" id="myTopnav">
 
             
-        <a href="/index.html" class=" icon rightVerticalLine homeLink" id="menuButton">
-            <img src="/img/faviconPlainSmall.png" alt="Menu Button">
-        </a>
+            <a href="/index.html" class="icon rightVerticalLine homeLink">
+                <img src="/img/faviconPlainSmall.png" alt="Menu Button">
+            </a>
         
-        <div class="menuContainer">
+            <div class="menuContainer">
                 <a href="#" class="icon leftVerticalLine" id="menuButton">
-                    <img src="/img/menu.png"
-                    height="30"
-                    width="30"
-                    alt="Menu Button">
+                    <img src="/img/menu.png" alt="Menu Button">
                 </a>
 
                 <div class="dropdownMenu">

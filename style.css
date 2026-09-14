@@ -710,8 +710,7 @@ h4 a:hover {
     background-color: rgb(8, 40, 74);;
 }
 .homeLink {
-
-    width: min(45vw, 300px);
+    width: min(15vw, 300px);
 }
 
 .topnav img {
@@ -728,7 +727,7 @@ h4 a:hover {
 .menuContainer {
     float: right;
     position: relative;
-    width: min(45vw, 300px);
+    width: min(15vw, 300px);
 }
 .menuContainer .icon {
     display: block;
@@ -829,6 +828,22 @@ h4 a:hover {
         -ms-flex: 50%; /* IE10 */
         flex: 50%;
         max-width: 50%;
+    }
+
+    .rightVerticalLine {
+        border-right: medium solid #e71c1c00;
+    }
+
+    .leftVerticalLine {
+        border-left: medium solid #b4b4b400;
+        
+    }
+
+    .homeLink {
+        width: 100px;
+    }
+    .menuContainer {
+        width: 100px;
     }
 }
 
