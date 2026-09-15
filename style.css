@@ -84,12 +84,13 @@ h4 a:hover {
 }
 
 .rounded {
-    border-radius: 30% 0%;
+    border-radius: 30% 1%;
     -webkit-background-clip: padding-box;
     background-clip: padding-box;
     -moz-background-clip: padding;
     -webkit-transform: translateZ(0);
-
+    border-left: thick solid #cccccc;
+    border-right: thick solid #cccccc;
 }
 
 .coverArt {
@@ -124,6 +125,8 @@ h4 a:hover {
     height: 450px;
     position: relative;
     padding-top: 35px;
+    position: relative;
+    z-index: 2;
 }
 
 .coverDivFull {
@@ -307,7 +310,7 @@ h4 a:hover {
 }
 
 .topLine{
-    border-top: thick solid #3c3c3c;
+    border-top: medium solid #3c3c3c;
     width: min(970px, 100%);
     padding-top: 13px;
     margin-inline: clamp(15px, 5vw, 60px);
@@ -791,11 +794,11 @@ h4 a:hover {
 }
 
 .rightVerticalLine {
-    border-right: medium solid #b4b4b4;
+    border-right: medium solid #cccccc;
 }
 
 .leftVerticalLine {
-    border-left: medium solid #b4b4b4;
+    border-left: medium solid #cccccc;
 }
 
 
@@ -1105,23 +1108,36 @@ h4 a:hover {
 /* ---------------------------------------------------------
    slideshow
    --------------------------------------------------------- */
+.big-TopBackground-image {
+    position: relative;
+    overflow: hidden;
+    margin-top: 0px;
+}
+
 .projectSlideshow {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     width: 100%;
+    height: 100%;
+
     overflow: hidden;
 }
 
 .projectTrack {
     display: flex;
     width: max-content;
-    animation: slideProjects 30s linear infinite;
+    height: 100%;
+
+    animation: slideProjects 60s linear infinite;
 }
 
 .projectTrack img {
-    height: 200px;
+    height: 100%;
     width: auto;
-    object-fit: cover;
     flex-shrink: 0;
-    margin-right: 0px;
+    object-fit: cover;
 }
 
 @keyframes slideProjects {
@@ -1130,6 +1146,6 @@ h4 a:hover {
     }
 
     to {
-        transform: translateX(calc(-50%));
+        transform: translateX(-50%);
     }
 }
