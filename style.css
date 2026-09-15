@@ -1,20 +1,31 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
 body {
-    height: 100%;
+    min-height: 100vh;
+    margin: 0;
     color: #252525;
     background-color: #eee;
-    margin: 0px; 
     line-height: 1.5;
-    display: block;
-    font-family:'Courier New', Courier, monospace;
-    font-family:monospace ;
     font-family: Helvetica, Arial, sans-serif;
     text-align: center;
-
 }
 
 a {
     color: rgb(68, 160, 221);
     text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -23,8 +34,8 @@ p {
     color: rgb(36,36,38);
     font-size: 0.9rem;
     font-weight: normal;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-bottom: 0;
+    margin-top: 0;
     text-align: justify;
     padding-top: 5px;
     padding-bottom: 5px;
@@ -39,7 +50,6 @@ p a:hover {
 
 h1, h2 {
     font-size: clamp(1.5rem, 4vw, 2rem);
-    margin-bottom: 0px;
     margin-top: 50px;
     margin-bottom: 25px;
     line-height: 30px;
@@ -80,15 +90,12 @@ h4 a:hover {
     line-height: 3rem;
     font-size: 2rem;
     padding-bottom: 10px;
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 .rounded {
     border-radius: 30% 1%;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-background-clip: padding;
-    -webkit-transform: translateZ(0);
     border-left: thick solid #cccccc;
     border-right: thick solid #cccccc;
 }
@@ -103,7 +110,7 @@ h4 a:hover {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    margin-top: 0px;
+    margin-top: 0;
 
 }
 
@@ -140,7 +147,7 @@ h4 a:hover {
     margin-left: auto;
     margin-right: auto;
     max-width: 1800px;
-    margin-top: 0px;
+    margin-top: 0;
 
     padding-top: 1px;
     padding-bottom: 15px;
@@ -150,10 +157,7 @@ h4 a:hover {
 
 .footer {
     height: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 30px;
+    margin: auto auto 30px;
 }
 
 .light {
@@ -182,7 +186,6 @@ h4 a:hover {
 .mainTextField {
     width: min(750px, 95%);
     justify-self: center;
-    padding: auto;
 }
 
 .textBubbleDiv {
@@ -195,18 +198,14 @@ h4 a:hover {
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 25px;
-    border-radius: 30px 30px 30px 30px;
-    -moz-background-clip: padding;
-    -webkit-background-clip: padding-box;
+    border-radius: 30px;
     background-clip: padding-box;
 }
-
 
 
 .item {
     text-decoration: none;
     position: relative;
-    -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
 }
@@ -218,7 +217,6 @@ h4 a:hover {
     margin-left: auto;
     margin-right: auto;
 }
-
 
 
 .contact {
@@ -238,7 +236,6 @@ h4 a:hover {
     font-size: 3em;
     max-width: 1600px;
     text-align: left;
-    margin-bottom: 0px;
     margin-top: 40px;
     margin-bottom: 10px;
     line-height: 40px;
@@ -250,9 +247,9 @@ h4 a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 10px;
-    padding: 0px;
+    padding: 0;
 }
 
 
@@ -264,11 +261,10 @@ h4 a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 10px;
-    padding: 0px;
+    padding: 0;
 }
-
 
 
 .big-TopBackground-image {
@@ -320,10 +316,6 @@ h4 a:hover {
 }
 
 
-
-
-
-
 /*project pages--------------------------*/
 .projectPage-Category{
     font-size: 0.9em;
@@ -338,8 +330,8 @@ h4 a:hover {
 }
 
 .projectMainHeader{
-    margin-top: -0px;
-    margin-bottom: 0px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .project-tags{
@@ -381,8 +373,8 @@ h4 a:hover {
     display: block;
     margin-bottom: 5px;
     margin-top: 5px;
-    padding: 0px;
-    aspect-ratio: 3/2;
+    padding: 0;
+    aspect-ratio: 3 / 2;
     object-fit: cover;
     object-position: 50% 20%;
     justify-self: center;
@@ -413,19 +405,12 @@ h4 a:hover {
     display: block;
     margin-bottom: 5px;
     margin-top: 5px;
-    padding: 0px;
-    aspect-ratio: 1/1;
+    padding: 0;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: 50% 20%;
     justify-self: center;
 }
-
-
-
-
-
-
-
 
 
 /*Hoverable tiles--------------------------*/
@@ -445,18 +430,16 @@ h4 a:hover {
 }
 
 
-
-
 /*Project grid and Tiles--------------------------*/
 .gridProjects {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(290px, 100%), 1fr));
-    gap: clamp(5px, 0.5vw, 5px);
+    gap: 5px;
     justify-content: center;
-    width: min(1100px, 100%);
+    width: min(1000px, 100%);
     margin: 0 auto;
     padding-bottom: 15px;
-    padding-inline: clamp(15px, 5vw, 60px);
+    padding-inline: clamp(1px, 1vw, 30px);
     box-sizing: border-box;
 }
 
@@ -464,7 +447,7 @@ h4 a:hover {
 .gridProjectTile {
     width: min(400px, 100%);
     justify-self: center;
-    aspect-ratio: 12/12;
+    aspect-ratio: 1 / 1;
     box-sizing: border-box;
 }
 
@@ -478,14 +461,11 @@ h4 a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 
-    padding: 0px;
-    border-radius: 0px 0px 0px 0px;
-    -webkit-background-clip: padding-box;
+    padding: 0;
+    border-radius: 0;
     background-clip: padding-box;
-    -moz-background-clip: padding;
-    -webkit-transform: translateZ(0);
     aspect-ratio: 5/3;
     object-fit: cover;
     object-position: 50% 50%;
@@ -493,17 +473,13 @@ h4 a:hover {
 
 .card-body {
     background-color: white;
-    height: 100px;
+    height: 110px;
     display: block;
-    margin: 0px;
+    margin: 0;
     padding-inline: 5px;
     padding-top: 12px;
     border-radius:0px 0px 0px 0px;
-    -webkit-background-clip: padding-box;
     background-clip: padding-box;
-    -moz-background-clip: padding;
-    -webkit-transform: translateZ(0);
-
 }
 
 .category {
@@ -554,13 +530,13 @@ h4 a:hover {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 5px;
-    padding: auto;
     font-size: 1.2em;
     text-align: left;
-    padding-top: 0px;
-    padding-bottom: 0px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     display: -webkit-box;
+    line-clamp: 1;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
     overflow: hidden;
@@ -569,23 +545,21 @@ h4 a:hover {
 .description {
     color: #999;
     display: block;
-    line-height: 18px;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 15px;
-    margin-top: px;
+    margin-top: 0;
 
     font-size: 0.8em;
     line-height: 18px;
     padding: 0;
     text-align: left;
     display: -webkit-box;
+    line-clamp: 3;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
-
-
 
 
 /*Artwork grid and tiles--------------------------*/
@@ -593,7 +567,7 @@ h4 a:hover {
 .gridArtworks {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(260px, 40%), 1fr));
-    gap: 15px clamp(0px, 0vw, 0px);
+    gap: 15px 0;
 
     width: min(1200px, 100%);
     margin: 0 auto;
@@ -606,7 +580,7 @@ h4 a:hover {
     justify-self: center;
     aspect-ratio: 3 / 4;
 
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -619,7 +593,6 @@ h4 a:hover {
     object-position: 50% 20%;
     border-radius: 20px 0px 20px 0px;
 }
-
 
 
 /*popup--------------------------*/
@@ -653,14 +626,11 @@ h4 a:hover {
 }
 
 
-
-
-
 /*contact page--------------------------*/
 .gridIcons{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(140px, 24%), 1fr));
-    gap: 0px clamp(0px, 0vw, 0px);
+    gap: 0;
 
     width: min(600px, 100%);
     margin: 0 auto;
@@ -676,7 +646,7 @@ h4 a:hover {
     justify-self: center;
     aspect-ratio: 1 / 1;
 
-    padding: 0px;
+    padding: 0;
     box-sizing: border-box;
     object-fit: contain;
 
@@ -685,11 +655,6 @@ h4 a:hover {
 .hello{
     margin-top: 20px;
 }
-
-
-
-
-
 
 
 /*Top Nav bar--------------------------*/
@@ -710,7 +675,7 @@ h4 a:hover {
 }
 
 .topnav a:hover {
-    background-color: rgb(8, 40, 74);;
+    background-color: rgb(8, 40, 74);
 }
 .homeLink {
     width: min(15vw, 300px);
@@ -724,7 +689,7 @@ h4 a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px;
+    padding: 0;
 }
 /* Hamburger menu */
 .menuContainer {
@@ -770,28 +735,6 @@ h4 a:hover {
     clear: both;
 }
 
-/*
-.topnav a:not(:first-child) {
-    display: none;
-}*/
-
-
-.topnav.responsive {
-    position: relative;
-    
-}
-
-.topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-}
 
 .rightVerticalLine {
     border-right: medium solid #cccccc;
@@ -806,69 +749,6 @@ h4 a:hover {
     border-bottom: thick solid #b4b4b4;
 }
 
-@media screen and (max-width: 1200px) {
-    .card {
-        -ms-flex: 33.33333%; /* IE10 */
-        flex: 33.33333%;
-        max-width: 33.33333%;
-    }
-    
-    .item {
-        -ms-flex: 33.33333%; /* IE10 */
-        flex: 33.33333%;
-        max-width: 33.33333%;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .card {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        max-width: 50%;
-    }
-    
-    .item {
-        -ms-flex: 50%; /* IE10 */
-        flex: 50%;
-        max-width: 50%;
-    }
-
-    .rightVerticalLine {
-        border-right: medium solid #e71c1c00;
-    }
-
-    .leftVerticalLine {
-        border-left: medium solid #b4b4b400;
-        
-    }
-
-    .homeLink {
-        width: 100px;
-    }
-    .menuContainer {
-        width: 100px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    .card {
-        -ms-flex: 100%; /* IE10 */
-        flex: 100%;
-        max-width: 100%;
-    }
-    
-    .item {
-        -ms-flex: 100%; /* IE10 */
-        flex: 100%;
-        max-width: 100%;
-        
-    }
-
-    .topLine{
-        border-top: medium solid #3c3c3c;
-
-    }
-}
 
 @media (prefers-color-scheme: dark) {
     body {
@@ -919,14 +799,6 @@ h4 a:hover {
 
     
 }
-
-
-
-
-
-
-
-
 
 
 /* =========================================================
@@ -1026,7 +898,6 @@ h4 a:hover {
 }
 
 
-
 /* ---------------------------------------------------------
    Skills
    --------------------------------------------------------- */
@@ -1098,30 +969,20 @@ h4 a:hover {
 }
 
 
-
-
-
-
-
-
-
 /* ---------------------------------------------------------
-   slideshow
+   Slideshow
    --------------------------------------------------------- */
-.big-TopBackground-image {
+
+.big-TopBackground-slideshow {
+    height: 365px;
     position: relative;
     overflow: hidden;
-    margin-top: 0px;
+    margin: 0 0 5px;
 }
 
 .projectSlideshow {
     position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
+    inset: 0;
     overflow: hidden;
 }
 
@@ -1129,14 +990,13 @@ h4 a:hover {
     display: flex;
     width: max-content;
     height: 100%;
-
     animation: slideProjects 60s linear infinite;
 }
 
 .projectTrack img {
+    flex: 0 0 auto;
     height: 100%;
     width: auto;
-    flex-shrink: 0;
     object-fit: cover;
 }
 
@@ -1147,5 +1007,12 @@ h4 a:hover {
 
     to {
         transform: translateX(-50%);
+    }
+}
+
+/* Respect users who prefer reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+    .projectTrack {
+        animation: none;
     }
 }
