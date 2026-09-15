@@ -4,28 +4,46 @@ const navigation = document.getElementById("navigation");
 
 if (navigation) {
     navigation.innerHTML = `
-        <div class="topnav" id="myTopnav">
 
-            
-            <a href="/index.html" class="icon rightVerticalLine homeLink">
-                <img src="/img/faviconPlainSmall.png" alt="Menu Button">
+<div class="topnav" id="myTopnav">
+
+    <div class="navSide navLeft">
+        <a href="/index.html" class="navIcon rightVerticalLine">
+            <img src="/img/faviconPlainSmall.png" alt="Home">
+        </a>
+    </div>
+
+    <div class="navCenter">
+        <!-- 
+        <a href="/somewhere.html" class="navIcon">
+            <img src="/img/faviconPlainSmall.png" alt="Something">
+        </a>
+
+        <a href="/another.html" class="navIcon">
+            <img src="/img/faviconPlainSmall.png" alt="Another">
+        </a> 
+        -->
+    </div>
+
+    <div class="navSide navRight">
+        <div class="menuContainer">
+            <a href="#" class="navIcon leftVerticalLine" id="menuButton">
+                <img src="/img/menu.png" alt="Menu">
             </a>
-        
-            <div class="menuContainer">
-                <a href="#" class="icon leftVerticalLine" id="menuButton">
-                    <img src="/img/menu.png" alt="Menu Button">
-                </a>
 
-                <div class="dropdownMenu">
-                    <a href="/index.html">Home</a>
-                    <a href="/My-Projects.html">Projects</a>
-                    <a href="/My-Art.html">Artworks</a>
-                    <a href="/About-Me.html">About Me</a>
-                    <a href="/Contact.html">Contact</a>
-                </div>
+            <div class="dropdownMenu">
+                <a href="/index.html">Home</a>
+                <a href="/My-Projects.html">Projects</a>
+                <a href="/My-Art.html">Artworks</a>
+                <a href="/About-Me.html">About Me</a>
+                <a href="/Contact.html">Contact</a>
             </div>
-
         </div>
+    </div>
+
+</div>
+
+
     `;
 }
 
