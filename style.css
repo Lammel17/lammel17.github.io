@@ -1093,3 +1093,43 @@ h4 a:hover {
 
     border-bottom: 1px solid currentColor;
 }
+
+
+
+
+
+
+
+
+
+/* ---------------------------------------------------------
+   slideshow
+   --------------------------------------------------------- */
+.projectSlideshow {
+    width: 100%;
+    overflow: hidden;
+}
+
+.projectTrack {
+    display: flex;
+    width: max-content;
+    animation: slideProjects 30s linear infinite;
+}
+
+.projectTrack img {
+    height: 200px;
+    width: auto;
+    object-fit: cover;
+    flex-shrink: 0;
+    margin-right: 0px;
+}
+
+@keyframes slideProjects {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(-50%));
+    }
+}
