@@ -96,12 +96,12 @@ export const favouriteProjects = [
         page: "/projects/foot_placement_code/project_page.html"
     },
     {
-        name: "Lend A Hand",
-        category: "Animation",
-        categoryClass: "animation",
-        description: "A hand-drawn, frame-by-frame animation of a green hand annoyed by a fly. The hand and fly get into an interesting fight before eventually reconciling.",
-        image: "/projects/lend_a_hand/CoverImage.png",
-        page: "/projects/lend_a_hand/project_page.html"
+        name: "Animal Crossovers",
+        category: "Digital Art",
+        categoryClass: "artwork",
+        description: "Here I combined animal features to form a new creature. There are 18 animal crossovers in this collection.",
+        image: "/projects/animal_crossovers/CoverImage.png",
+        page: "/projects/animal_crossovers/project_page.html"
     },
 ];
 

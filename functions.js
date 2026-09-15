@@ -78,7 +78,7 @@ function openPopup(image) {
     const popup = document.getElementById("imagePopup");
     const popupImage = document.getElementById("popupImage");
 
-    popupImage.src = image.src;
+    popupImage.src = image.dataset.original;
     popupImage.alt = image.alt;
 
     popup.style.display = "flex";
@@ -161,7 +161,9 @@ function createArtworkTile(filename, grid) {
 
     tile.innerHTML = `
         <div class="hoverable">
-            <img src="artworks/${filename}" alt="" loading="lazy" class="popupImage">
+            <img src="artworks/compressedImages/${filename}" 
+            data-original="artworks/${filename}"
+            alt="" loading="lazy" class="popupImage">
         </div>
     `;
 
