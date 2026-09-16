@@ -96,8 +96,8 @@ h4 a:hover {
 .rounded {
     border-radius: 30% 1%;
     background-clip: padding-box;
-    border-left: thick solid #cccccc;
-    border-right: thick solid #cccccc;
+    border-left: thick solid #ffffff;
+    border-right: thick solid #ffffff;
 }
 
 .coverArt {
@@ -569,9 +569,9 @@ h4 a:hover {
     grid-template-columns: repeat(auto-fit, minmax(min(260px, 40%), 1fr));
     gap: 15px 0;
 
-    width: min(1200px, 100%);
+    width: min(1100px, 100%);
     margin: 0 auto;
-    padding-inline: clamp(1px, 4vw, 60px);
+
     box-sizing: border-box;
 }
 
@@ -753,11 +753,11 @@ h4 a:hover {
 
 
 .rightVerticalLine {
-    border-right: medium solid #cccccc;
+    border-right: thin solid #435f91;
 }
 
 .leftVerticalLine {
-    border-left: medium solid #cccccc;
+    border-left: thin solid #435f91;
 }
 
 
@@ -815,6 +815,41 @@ h4 a:hover {
 
     
 }
+
+@media screen and (max-width: 600px) {
+    .card {
+        -ms-flex: 100%; /* IE10 */
+        flex: 100%;
+        max-width: 100%;
+    }
+    
+    .item {
+        -ms-flex: 100%; /* IE10 */
+        flex: 100%;
+        max-width: 100%;
+        
+    }
+
+    .topLine{
+        border-top: thin solid #3c3c3c;
+    }
+
+    .rightVerticalLine {
+        border-right: medium solid #cccccc00;
+    }
+
+    .leftVerticalLine {
+        border-left: medium solid #cccccc00;
+    }
+
+    p{
+        line-height: 1.3;
+        font-size: 0.8rem;
+    }
+
+
+}
+
 
 
 /* =========================================================
@@ -998,18 +1033,28 @@ h4 a:hover {
 
 .projectSlideshow {
     position: absolute;
-    inset: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     overflow: hidden;
 }
 
 .projectTrack {
     display: flex;
-    width: max-content;
     height: 100%;
-    animation: slideProjects 60s linear infinite;
+    width: max-content;
+
+    animation-name: slideProjects;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    will-change: transform;
 }
 
 .projectTrack img {
+    display: block;
     flex: 0 0 auto;
     height: 100%;
     width: auto;
@@ -1023,12 +1068,5 @@ h4 a:hover {
 
     to {
         transform: translateX(-50%);
-    }
-}
-
-/* Respect users who prefer reduced motion. */
-@media (prefers-reduced-motion: reduce) {
-    .projectTrack {
-        animation: none;
     }
 }
