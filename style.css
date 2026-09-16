@@ -669,7 +669,7 @@ h4 a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 
-    background-color: rgb(14, 62, 116);
+    background-color: rgb(14, 116, 91);
     z-index: 1000;
 }
 
@@ -727,6 +727,7 @@ h4 a:hover {
     top: 30px;
     right: 0;
 
+    width: min(15vw, 300px);
     min-width: 180px;
 
     background-color: rgb(14, 62, 116);
@@ -749,6 +750,7 @@ h4 a:hover {
 
 .dropdownMenu a:hover {
     background-color: rgb(8, 40, 74);
+    border-left: thick solid #ffffff;
 }
 
 

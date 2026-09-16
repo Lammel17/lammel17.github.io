@@ -58,7 +58,7 @@ function createContactSection() {
 
     contact.innerHTML = `
         <div class="textBubbleDiv hoverable" id="emailCopy">
-            <span class="email">- lukaskonstanz@web.de -</span>
+            <span class="email"> lukaskonstanz@web.de </span>
         </div>
 
         <div class="contact">
