@@ -96,7 +96,13 @@ function openPopup(image) {
     const popup = document.getElementById("imagePopup");
     const popupImage = document.getElementById("popupImage");
 
-    popupImage.src = image.dataset.original;
+    if (image.dataset.original == null){
+        popupImage.src = image.src;
+    }
+    else {
+        popupImage.src = image.dataset.original;
+    }
+    
     popupImage.alt = image.alt;
 
     popup.style.display = "flex";
