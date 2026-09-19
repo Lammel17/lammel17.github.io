@@ -188,6 +188,7 @@ h4 a:hover {
 .mainTextField {
     width: min(750px, 95%);
     justify-self: center;
+    margin: 0 auto;
 }
 
 .textBubbleDiv {
