@@ -355,6 +355,8 @@ h4 a:hover {
     margin-bottom: 20px;
     display: block;
     justify-self: center;
+    margin-inline: auto;
+    
 
 }
 
