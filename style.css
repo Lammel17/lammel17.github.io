@@ -1010,6 +1010,7 @@ h4 a:hover {
     width: min(500px, 100%);
     margin-top: 35px;
     justify-self: center;
+    margin-inline: auto;
 }
 
 
