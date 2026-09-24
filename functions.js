@@ -72,7 +72,7 @@ function createContactSection() {
                     </i>
                 </p>
                 <p>
-                     © Lukas Müller · Portfolio
+                     <a href="/Legal-Notice.html">Legal Notice & Privacy Policy</a> · Lukas Müller © 2026 - All rights reserved
                 </p>
             </div>
         </div>

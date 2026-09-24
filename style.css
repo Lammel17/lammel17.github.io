@@ -635,10 +635,10 @@ h4 a:hover {
 /*contact page--------------------------*/
 .gridIcons{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(140px, 24%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100px, 24%), 1fr));
     gap: 0;
 
-    width: min(600px, 100%);
+
     margin: 0 auto;
     margin-top: 20px;
     padding-top: 10px;
@@ -885,7 +885,7 @@ h4 a:hover {
 .cv-timeline::before {
     content: "";
     position: absolute;
-    left: 125px;
+    left: 105px;
     top: 0;
     bottom: 0;
     width: 2px;
@@ -898,7 +898,7 @@ h4 a:hover {
     position: relative;
 
     display: grid;
-    grid-template-columns: 100px 1fr;
+    grid-template-columns: 80px 1fr;
     column-gap: 50px;
 
     margin-bottom: 45px;
@@ -922,7 +922,7 @@ h4 a:hover {
 
     position: absolute;
 
-    left: 119px;
+    left: 99px;
     top: 6px;
 
     width: 14px;
@@ -961,44 +961,41 @@ h4 a:hover {
    Skills
    --------------------------------------------------------- */
 
-.cv-skills {
+.skillsList {
+    margin: 30px auto;
+
     display: grid;
-    max-width: 600px;
-    margin: auto;
-    box-sizing: border-box;
-    grid-template-columns:
-        repeat(auto-fit, minmax(200px, 40%));
-
-    gap: 25px;
-    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 12px;
 }
 
+.skillItem {
+    padding: 8px 20px;
+    padding-bottom: 10px;
 
-.cv-skill-category {
-    padding: 20px;
-    width: 100%;
-    border: 1px solid currentColor;
-    border-radius: 5px;
+    background-color: #2a2a2a;
+    border-left: 4px solid rgb(84, 84, 84);
 
-    box-sizing: border-box;
+    text-align: left;
+
+    transition:
+        transform 0.2s ease,
+        background-color 0.2s ease,
+        box-shadow 0.2s ease;
 }
 
+.skillItem strong {
+    display: block;
+    margin-bottom: 0px;
 
-.cv-skill-category h3 {
-    margin-top: 0;
-    margin-bottom: 15px;
+    color: rgb(150, 150, 150);
+    font-size: 1.05em;
 }
 
-
-.cv-skill-category ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-
-.cv-skill-category li {
-    margin-bottom: 7px;
+.skillItem span {
+    display: block;
+    color: #ffffff;
+    line-height: 1.5;
 }
 
 
