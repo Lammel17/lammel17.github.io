@@ -58,7 +58,7 @@ function createContactSection() {
 
     contact.innerHTML = `
         <div class="textBubbleDiv hoverable" id="emailCopy">
-            <span class="email"> lukaskonstanz@web.de </span>
+            <span class="email"> &#108;&#117;&#107;&#97;&#115;&#107;&#111;&#110;&#115;&#116;&#97;&#110;&#122;&#64;&#119;&#101;&#98;&#46;&#100;&#101; </span>
         </div>
 
         <div class="contact">
@@ -85,6 +85,25 @@ function createContactSection() {
     });
 }
 
+//copy mail-----------------------------------------------
+function copyEmail(element) {
+    navigator.clipboard.writeText(element.textContent.trim());
+
+    const originalText = element.textContent;
+    element.textContent = "Copied!";
+
+    setTimeout(() => {
+        element.textContent = originalText;
+    }, 1500);
+}
+
+const emailCopy = document.getElementById("emailCopy");
+
+if (emailCopy) {
+    emailCopy.addEventListener("click", () => {
+        copyEmail(emailCopy.querySelector("span"));
+    });
+}
 
 
 
@@ -194,24 +213,3 @@ function createArtworkTile(filename, grid) {
     grid.appendChild(tile);
 }
 
-
-
-//copy mail-----------------------------------------------
-function copyEmail(element) {
-    navigator.clipboard.writeText(element.textContent.trim());
-
-    const originalText = element.textContent;
-    element.textContent = "Copied!";
-
-    setTimeout(() => {
-        element.textContent = originalText;
-    }, 1500);
-}
-
-const emailCopy = document.getElementById("emailCopy");
-
-if (emailCopy) {
-    emailCopy.addEventListener("click", () => {
-        copyEmail(emailCopy.querySelector("span"));
-    });
-}
