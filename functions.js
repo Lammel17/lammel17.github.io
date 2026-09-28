@@ -58,7 +58,7 @@ function createContactSection() {
 
     contact.innerHTML = `
         <div class="textBubbleDiv hoverable" id="emailCopy">
-            <span class="email"> &#108;&#117;&#107;&#97;&#115;&#107;&#111;&#110;&#115;&#116;&#97;&#110;&#122;&#64;&#119;&#101;&#98;&#46;&#100;&#101; </span>
+            <span id="emailAddress"></span>
         </div>
 
         <div class="contact">
@@ -84,6 +84,17 @@ function createContactSection() {
         copyEmail(emailCopy.querySelector(".email"));
     });
 }
+
+const emailParts = 
+[
+    "lukas",
+    "mueller",
+    "digital@gmail",
+    "com"
+];
+
+document.getElementById("emailAddress").textContent =
+    emailParts.join(".");
 
 //copy mail-----------------------------------------------
 function copyEmail(element) {
