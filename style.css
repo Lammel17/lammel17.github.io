@@ -312,7 +312,7 @@ h4 a:hover {
     border-top: medium solid #3c3c3c;
     width: min(970px, 100%);
     padding-top: 13px;
-    margin-inline: clamp(15px, 5vw, 60px);
+    margin-inline: auto;
     margin-top: 10px;
     margin-bottom: 10px;
     justify-self: center;
