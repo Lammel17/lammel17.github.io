@@ -78,13 +78,10 @@ function createContactSection() {
         </div>
     `;
 
-    const emailCopy = document.getElementById("emailCopy");
-
-    emailCopy.addEventListener("click", () => {
-        copyEmail(emailCopy.querySelector(".email"));
-    });
 }
 
+
+//create mail-----------------------------------------------
 const emailParts = 
 [
     "lukas",
@@ -93,8 +90,31 @@ const emailParts =
     "com"
 ];
 
-document.getElementById("emailAddress").textContent =
+const gotEmail = document.getElementById("emailAddress");
+if (gotEmail) 
+    document.getElementById("emailAddress").textContent =
     emailParts.join(".");
+
+
+const adressParts = 
+[
+    "Schmal",
+    "egger S",
+    "tr. ",
+    "4",
+    "3"
+];
+
+const gotAdress = document.getElementById("locationAdress");
+if (gotAdress) 
+document.getElementById("locationAdress").textContent =
+    adressParts.join("");
+
+const gotAdress1 = document.getElementById("locationAdress1");
+if (gotAdress1) 
+document.getElementById("locationAdress1").textContent =
+    adressParts.join("");
+
 
 //copy mail-----------------------------------------------
 function copyEmail(element) {
