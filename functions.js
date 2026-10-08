@@ -64,15 +64,16 @@ function createContactSection() {
         <div class="contact">
             <div class="contact-body mainTextField">
                 <p>
-                    Tap the email address to copy it, or
-                    <i>
-                        <a href="/Contact.html">
-                            check out the contact page here
-                        </a>.
-                    </i>
+                    Click or tap the email address to copy it, or
+                    <a href="/Contact.html"> visit the contact page</a>.
                 </p>
                 <p>
-                     <a href="/Legal-Notice.html">Legal Notice & Privacy Policy</a> · Lukas Müller © 2026 - All rights reserved
+                    Learn more about this website and the use of AI
+                    <a href="/projects/portfolio_site/project_page.html"> here</a>.
+                </p>
+                <p>
+                    <a href="/Legal-Notice.html">Legal Notice & Privacy Policy</a>
+                    · Lukas Müller © 2026 · All rights reserved
                 </p>
             </div>
         </div>
